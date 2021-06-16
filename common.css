@@ -54,3 +54,17 @@ p {
 li {
   max-width: 900px;
 }
+
+table {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+td, th {
+  border: 0.5px solid black;
+  padding: 4px;
+}
+
+.highlight {
+  color: red;
+}
