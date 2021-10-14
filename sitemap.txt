@@ -1,12 +1,14 @@
 https://neara.org/bios.html
 https://neara.org/chapters.html
 https://neara.org/conferences.html
+https://neara.org/donate.html
 https://neara.org/gallery.html
 https://neara.org/index.html
 https://neara.org/library.html
 https://neara.org/membership.html
 https://neara.org/publications.html
 https://neara.org/research.html
+https://neara.org/sale.html
 https://neara.org/topics.html
 https://neara.org/chapters/AtlanticCanada.html
 https://neara.org/chapters/Connecticut.html
