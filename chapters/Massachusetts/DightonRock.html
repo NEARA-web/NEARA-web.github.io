@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Recent NEARA Research and Special Projects." />
+  <title>Dighton Rock</title>
+  <link href="/common.css" rel="stylesheet">
+  <style>
+    body { font-family: sans-serif; }
+    #mySpinner { display: none; position: absolute; z-index: 100; animation: spin 1s linear infinite; }
+    @keyframes spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+  </style>
+</head>
+<body>
+  <div class="topnav">
+    <a href="/index.html">Home</a>
+    <a href="/topics.html">Topics</a>
+    <a href="/chapters.html" title="Chapters">Contacts</a>
+    <a href="/membership.html">Membership</a>
+    <a href="/conferences.html">Conferences</a>
+    <a href="/library.html">Library</a>
+    <a href="/research.html">Research</a>
+    <a href="/publications.html">Publications</a>
+    <a href="/gallery.html">Gallery</a>
+    <a href="/sale.html">Sale</a>
+    <a href="/donate.html">Donate</a>
+  </div>
+
+  <img alt="New England Antiquities Research Association" src="/images/logo.png" class="logotitle">
+
+  <h2>Dighton Rock 3D Scans</h2>
+  <p>
+    Dighton Rock is a well known boulder with petroglyphs, originally located in the Taunton River at Berkley Massachusetts,
+    but now housed nearby in a small museum dedicated to that rock at Dighton Rock State Park.
+    These might be the petroglyphs with the oldest known documentation in the Americas.
+  </p>
+  <p>
+    Wikipedia provides a description:
+    <a href="https://en.wikipedia.org/wiki/Dighton_Rock" target="_blank" rel="noopener">Wikipedia: Dighton Rock</a>.
+  </p>
+  <figure>
+    <img src="DightonRock/20140309.jpg" />
+    <figcaption>Dighton Rock in 2014, by Walter van Roggen</figcaption>
+  </figure>
+  <p>
+    In 2015 Stephen Wilkes of Feldman Geospatial, Boston Massachusetts, used a Faro metrology scanner to
+    scan part of the surface.  You can interactively examine the results in the 3D viewer below.
+  </p>
+  <div>
+    <div id="myViewer" style="width: 100%; height: 800px; border: solid 1px gray; background: black"></div>
+    <img id="mySpinner" src="DightonRock/spinner.png">
+  </div>
+  <p>
+    <em>Note: you may need to wait a minute for the 21MB file to load.
+    You will need to rotate the model in order to get the lighting at a good angle for seeing the petroglyphs.
+    Rotate using the left mouse button.
+    Pan using the right mouse button.
+    Zoom using the mouse wheel.</em>
+  </p>
+  <p>
+    He also used a Leica C10 to generate a point cloud, of which you can view this video:
+    <a href="https://drive.google.com/file/d/1UO21Pw5Ute8ImgOMaNvj5ctVo90bPo8Z/view?usp=sharing" target="_blank" rel="noopener">Dighton Rock video</a>
+  </p>
+  <p>
+    Thanks go to Feldman Geospatial for doing the work and for permission to make these recordings available to NEARA
+    for display on our web site.
+  </p>
+  <script src="DightonRock/stl_viewer.min.js"></script>
+  <script>
+const spinner = document.getElementById("mySpinner");
+const viewer = document.getElementById("myViewer");
+if (spinner && viewer) {
+  const x = Math.floor(viewer.offsetWidth/2 - spinner.naturalWidth/2);
+  const y = Math.floor(viewer.offsetHeight/2 - spinner.naturalHeight/2);
+  spinner.style.left = x + "px";
+  spinner.style.top = (y+viewer.offsetTop) + "px";
+  spinner.style.display = "inline";
+  // https://www.viewstl.com/#!
+  // https://www.viewstl.com/plugin/#intro
+  // https://github.com/omrips/viewstl
+  new StlViewer(viewer,
+    { models:
+      { id: 0, filename: "DightonRock.stl", rotationz: -2.35 },
+      all_loaded_callback: function() {
+        spinner.style.display = "none";      
+      }
+    });
+}
+  </script>
+</body>
+</html>
