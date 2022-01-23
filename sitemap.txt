@@ -14,6 +14,8 @@ https://neara.org/chapters/AtlanticCanada.html
 https://neara.org/chapters/Connecticut.html
 https://neara.org/chapters/Maine.html
 https://neara.org/chapters/Massachusetts.html
+https://neara.org/chapters/Massachusetts/DightonRock.html
+https://neara.org/chapters/Massachusetts/OldPlymouth.html
 https://neara.org/chapters/NewHampshire.html
 https://neara.org/chapters/NewJersey.html
 https://neara.org/chapters/NewYork.html
@@ -21,6 +23,11 @@ https://neara.org/chapters/Pennsylvania.html
 https://neara.org/chapters/RhodeIsland.html
 https://neara.org/chapters/Vermont.html
 https://neara.org/chapters/index.html
+https://neara.org/conferences/2021-11-07.html
+https://neara.org/pages/Moore/index.html
+https://neara.org/pages/OSLdatingProjectUpdate/index.html
+https://neara.org/pages/TriadOfTechnologies/index.html
+https://neara.org/research/2021-08-06.html
 https://neara.org/topics/AcrossPacific.html
 https://neara.org/topics/Archaeoastronomy.html
 https://neara.org/topics/ArchaeologyAnthropology.html
