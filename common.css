@@ -2,7 +2,7 @@ body {
   margin: 10px;
   background-color: #f1e9d5;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 13pt;
+  font-size: 12.5pt;
   color: #333;
 }
 
@@ -17,7 +17,7 @@ body {
   text-align: center;
   padding: 10px 4px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 12.5pt;
 }
 
 .topnav a:hover {
