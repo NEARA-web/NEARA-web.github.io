@@ -91,6 +91,7 @@
   </div>
 
   <script>
+function init() {
 const Folders = [
   {
     name: "chamber", title: "Chambers", example: "images/album_004.jpg",
@@ -185,6 +186,8 @@ if (myFolders && myPics) {
     myFolders.append(fi);
   });
 }
+}
+window.addEventListener('DOMContentLoaded', init);
   </script>
 </body>
 </html>
