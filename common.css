@@ -44,6 +44,11 @@ img {
   max-height: 400px;
 }
 
+.cover {
+  width: 309px;
+  height: 400px;
+}
+
 figcaption {
   font: italic 11pt sans-serif;
 }
