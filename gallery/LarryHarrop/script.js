@@ -76,19 +76,34 @@ if (myFolders && myPics) {
     const fi = document.createElement("div");
     fi.info = f;
     fi.className = "folderitem";
-    fi.textContent = `${f.title} (${f.pics.length})`;
+    fi.id = f.name;
+    fi.textContent = `${f.title}`;  //  (${f.pics.length})
     fi.onclick = function(e) {
-      myPics.innerHTML = "";
-      const name = this.info.name;
-      const pics = this.info.pics;
-      pics.forEach(filename => {
-        const img = document.createElement("img");
-        img.className = "pic";
-        img.src = `Images%2F${name}%2F${filename}`;
-        img.title = filename;
-        myPics.append(img);
-      });
+      document.location.search = "?c=" + f.name;
     };
     myFolders.append(fi);
   });
+
+  function show(category) {
+    myPics.innerHTML = "";
+    let tab = document.getElementById(category);
+    if (!tab) {  // pick one at random
+      category = Folders[Math.floor(Math.random()*Folders.length)].name;
+      tab = document.getElementById(category);
+    }
+    if (!tab) return;
+    const myCategory = document.getElementById("myCategory");
+    if (myCategory) myCategory.textContent = `${tab.info.title} (${tab.info.pics.length})`;
+    const name = tab.info.name;
+    const pics = tab.info.pics;
+    pics.forEach(filename => {
+      const img = document.createElement("img");
+      img.className = "pic";
+      img.src = `Images%2F${name}%2F${filename}`;
+      img.title = filename;
+      myPics.append(img);
+    });
+  }
+  
+  show(new URL(document.location).searchParams.get("c"));
 }

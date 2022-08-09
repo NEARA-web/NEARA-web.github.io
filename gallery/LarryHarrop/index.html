@@ -33,13 +33,13 @@
     #myFolders {
       display: flex;
       flex-direction: column;
-      width: 180px;
     }
     .folderitem {
       background-color: #DDDDDD;
       margin: 4px;
       padding: 2px;
       cursor: pointer;
+      width: 160px;
     }
     .folderitem:hover {
       background-color: white;
@@ -76,7 +76,10 @@
 
   <div style="display:flex; align-items: start">
     <folders id="myFolders"></folders>
-    <pics id="myPics"></pics>
+    <div>
+      <span id="myCategory" style="font-weight:bold"></span>
+      <pics id="myPics"></pics>
+    </div>
   </div>
 
   <hr>
