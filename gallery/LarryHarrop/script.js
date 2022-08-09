@@ -1,7 +1,7 @@
 const Folders = [
   {
     name: "chamber", title: "Chambers", example: "images/album_004.jpg",
-    pics: ["2.jpg","PC21.jpg","Panorama 21.jpg","s_1.jpg","s_14.jpg","s_2.jpg","s_25.jpg","s_26.jpg","s_27.jpg","s_28.jpg","s_31.jpg","s_32.jpg","s_33.jpg","s_34.jpg","s_5.jpg","s_813.jpg","s_9.jpg"]
+    pics: ["2.jpg","PC21.jpg","Panorama 21.jpg","s_1.jpg","s_14.jpg","s_2.jpg","s_25.jpg","s_26.jpg","s_27.jpg","s_28.jpg","s_31.jpg","s_32.jpg","s_33.jpg","s_34.jpg","s_41.jpg","s_5.jpg","s_813.jpg","s_9.jpg"]
   },
   {
     name: "shelter", title: "Shelters",
@@ -13,7 +13,7 @@ const Folders = [
   },
   {
     name: "serpent", title: "Serpent Effigies", example: "images/album_007.jpg",
-    pics: ["DSCN0373.jpg","DSCN0595.jpg","P1040402.jpg","P1150033.jpg","P3240267.jpg","canserp.png","fs_11.jpg","fs_12.jpg","fs_15.jpg","fs_2.jpg","fs_21.jpg","fs_22.jpg","fs_28.jpg","fs_31.jpg","fs_34.jpg","fs_5.jpg","fs_7.jpg","fs_8.jpg","omr-2.jpg","zz9.jpg"]
+    pics: ["DSCN0373.jpg","DSCN0595.jpg","P1040402.jpg","P1150033.jpg","P3240267.jpg","canserp.png","fs_11.jpg","fs_12.jpg","fs_15.jpg","fs_2.jpg","fs_21.jpg","fs_22.jpg","fs_28.jpg","fs_31.jpg","fs_34.jpg","fs_5.jpg","fs_7.jpg","fs_8.jpg","omr-2.jpg","pjb.jpg","serp.jpg","serp2.jpg","zz9.jpg"]
   },
   {
     name: "turtle", title: "Turtle Effigies",
@@ -25,7 +25,7 @@ const Folders = [
   },
   {
     name: "standing", title: "Standing Stones", example: "images/album_009.jpg",
-    pics: ["3.jpg","378.jpg","DSCF1006.jpg","Image00009.jpg","P1040398.jpg","P1080704.jpg","P1220027.jpg","P1220058.jpg","P1220082.jpg","P1220087.jpg","P3090238.jpg","P3240268.jpg","P3240276.jpg","P4160380.jpg","P4160390.jpg","P7080002.jpg","PC310251.jpg","cPB300037.jpg","omr-1.jpg","recumbent.jpg","s_1.jpg","s_10.jpg","s_11.jpg","s_12.jpg","s_13.jpg","s_14.jpg","s_15.jpg","s_16.jpg","s_17.jpg","s_18.jpg","s_19.jpg","s_2.jpg","s_20.jpg","s_21.jpg","s_22.jpg","s_23.jpg","s_24.jpg","s_25.jpg","s_26.jpg","s_27.jpg","s_28.jpg","s_3.jpg","s_30.jpg","s_31.jpg","s_32.jpg","s_33.jpg","s_34.jpg","s_35.jpg","s_36.jpg","s_4.jpg","s_5.jpg","s_57.jpg","s_58.jpg","s_59.jpg","s_6.jpg","s_60.jpg","s_7.jpg","s_8.jpg","s_9.jpg","standing stone 2.jpg"]
+    pics: ["3.jpg","378.jpg","DSCF1006.jpg","Image00009.jpg","P1040398.jpg","P1080704.jpg","P1220027.jpg","P1220058.jpg","P1220082.jpg","P1220087.jpg","P3090238.jpg","P3240268.jpg","P3240276.jpg","P4160380.jpg","P4160390.jpg","P7080002.jpg","PC310251.jpg","cPB300037.jpg","omr-1.jpg","recumbent.jpg","s_1.jpg","s_10.jpg","s_11.jpg","s_12.jpg","s_13.jpg","s_14.jpg","s_15.jpg","s_16.jpg","s_17.jpg","s_18.jpg","s_19.jpg","s_2.jpg","s_20.jpg","s_21.jpg","s_22.jpg","s_23.jpg","s_24.jpg","s_25.jpg","s_26.jpg","s_27.jpg","s_28.jpg","s_29.jpg","s_3.jpg","s_30.jpg","s_31.jpg","s_32.jpg","s_33.jpg","s_34.jpg","s_35.jpg","s_36.jpg","s_37.jpg","s_38.jpg","s_39.jpg","s_4.jpg","s_40.jpg","s_41.jpg","s_42.jpg","s_43.jpg","s_44.jpg","s_45.jpg","s_46.jpg","s_47.jpg","s_48.jpg","s_49.jpg","s_5.jpg","s_50.jpg","s_51.jpg","s_52.jpg","s_53.jpg","s_54.jpg","s_55.jpg","s_56.jpg","s_57.jpg","s_58.jpg","s_59.jpg","s_6.jpg","s_60.jpg","s_7.jpg","s_8.jpg","s_9.jpg","standing stone 2.jpg"]
   },
   {
     name: "platform", title: "Platform Cairns", example: "images/album_002.jpg",
@@ -37,15 +37,15 @@ const Folders = [
   },
   {
     name: "split", title: "Split Filled Boulders", example: "images/album_010.jpg",
-    pics: ["P3240277.jpg","P4160416.jpg","s_1.jpg","s_10.jpg","s_11.jpg","s_12.jpg","s_13.jpg","s_14.jpg","s_15.jpg","s_16.jpg","s_17.jpg","s_18.jpg","s_19.jpg","s_2.jpg","s_20.jpg","s_21.jpg","s_22.jpg","s_23.jpg","s_24.jpg","s_25.jpg","s_26.jpg","s_27.jpg","s_28.jpg","s_29.jpg","s_30.jpg","s_31.jpg","s_32.jpg","s_33.jpg","s_34.jpg","s_35.jpg","s_36.jpg","s_37.jpg","s_38.jpg","s_39.jpg","s_4.jpg","s_5.jpg","s_6.jpg","s_7.jpg","s_8.jpg","s_9.jpg"]
+    pics: ["001.jpg","P1060194.jpg","P3240277.jpg","s_114.jpg","s_22.jpg","s_44.jpg","s_65.jpg","s_86.jpg","100_7433.jpg","P1090481.jpg","P4160416.jpg","s_115.jpg","s_23.jpg","s_45.jpg","s_66.jpg","s_87.jpg","101_9242.jpg","P1100086.jpg","Untitled.jpg","s_116.jpg","s_24.jpg","s_46.jpg","s_67.jpg","s_88.jpg","DSCN1631.jpg","P1100504.jpg","a.jpg","s_117.jpg","s_25.jpg","s_47.jpg","s_68.jpg","s_89.jpg","P1020039.jpg","P1100514.jpg","dp2.jpg","s_118.jpg","s_26.jpg","s_48.jpg","s_69.jpg","s_9.jpg","P1020062.jpg","P1100515.jpg","s3.png","s_119.jpg","s_27.jpg","s_49.jpg","s_7.jpg","s_90.jpg","P1020103 1.jpg","P1100517.jpg","s_1.jpg","s_12.jpg","s_28.jpg","s_5.jpg","s_70.jpg","s_91.jpg","P1020127.jpg","P1100529.jpg","s_10.jpg","s_120.jpg","s_29.jpg","s_50.jpg","s_71.jpg","s_92.jpg","P1020732.jpg","P1100536.jpg","s_100.jpg","s_121.jpg","s_30.jpg","s_51.jpg","s_72.jpg","s_93.jpg","P1020744.jpg","P1100537.jpg","s_101.jpg","s_122.jpg","s_31.jpg","s_52.jpg","s_73.jpg","s_94.jpg","P1030220.jpg","P1100538.jpg","s_102.jpg","s_123.jpg","s_32.jpg","s_53.jpg","s_74.jpg","s_95.jpg","P1040003.jpg","P1100552.jpg","s_103.jpg","s_124.jpg","s_33.jpg","s_54.jpg","s_75.jpg","s_96.jpg","P1040033 1.jpg","P1100557.jpg","s_104.jpg","s_13.jpg","s_34.jpg","s_55.jpg","s_76.jpg","s_97.jpg","P1040034.jpg","P1100563.jpg","s_105.jpg","s_14.jpg","s_35.jpg","s_56.jpg","s_77.jpg","s_98.jpg","P1040046.jpg","P1100569.jpg","s_106.jpg","s_15.jpg","s_36.jpg","s_57.jpg","s_78.jpg","s_99.jpg","P1040050.jpg","P1100640.jpg","s_107.jpg","s_16.jpg","s_37.jpg","s_58.jpg","s_79.jpg","turtle 2.jpg","P1040052.jpg","P1100644.jpg","s_108.jpg","s_17.jpg","s_38.jpg","s_59.jpg","s_8.jpg","P1040059.jpg","P1100659.jpg","s_109.jpg","s_18.jpg","s_39.jpg","s_6.jpg","s_80.jpg","P1040085.jpg","P1100677.jpg","s_11.jpg","s_19-01.jpg","s_4.jpg","s_60.jpg","s_81.jpg","P1040099.jpg","P1100680.jpg","s_110.jpg","s_19.jpg","s_40.jpg","s_61.jpg","s_82.jpg","P1040120.jpg","P1100683.jpg","s_111.jpg","s_2.jpg","s_41.jpg","s_62.jpg","s_83.jpg","P1040482.jpg","P1100684.jpg","s_112.jpg","s_20.jpg","s_42.jpg","s_63.jpg","s_84.jpg","P1050462 1.jpg","P1110718.jpg","s_113.jpg","s_21.jpg","s_43.jpg","s_64.jpg","s_85.jpg"]
   },
   {
     name: "propped", title: "Propped, Perched, Pedestaled Boulders", example: "images/album_012.jpg",
-    pics: ["101.jpg","2.jpg","P8270121.jpg","Picture1.jpg","propped on quartz.jpg","s_1.jpg","s_10.jpg","s_11.jpg","s_12.jpg","s_13.jpg","s_14.jpg","s_15.jpg","s_16.jpg","s_17.jpg","s_18.jpg","s_19.jpg","s_2.jpg","s_20.jpg","s_21.jpg","s_22.jpg","s_23.jpg","s_24.jpg","s_25.jpg","s_26.jpg","s_27.jpg","s_28.jpg","s_29.jpg","s_3.jpg","s_30.jpg","s_31.jpg","s_32.jpg","s_33.jpg","s_34.jpg","s_35.jpg","s_4.jpg","s_42.jpg","s_5.jpg","s_55.jpg","s_58.jpg","s_59.jpg","s_6.jpg","s_7.jpg","s_8.jpg","s_9.jpg"]
+    pics: ["101.jpg","2.jpg","P8270121.jpg","Picture1.jpg","propped on quartz.jpg","s_1.jpg","s_10.jpg","s_11.jpg","s_12.jpg","s_13.jpg","s_14.jpg","s_15.jpg","s_16.jpg","s_17.jpg","s_18.jpg","s_19.jpg","s_2.jpg","s_20.jpg","s_21.jpg","s_22.jpg","s_23.jpg","s_24.jpg","s_25.jpg","s_26.jpg","s_27.jpg","s_28.jpg","s_29.jpg","s_3.jpg","s_30.jpg","s_31.jpg","s_32.jpg","s_33.jpg","s_34.jpg","s_35.jpg","s_36.jpg","s_37.jpg","s_38.jpg","s_39.jpg","s_4.jpg","s_40.jpg","s_41.jpg","s_43.jpg","s_44.jpg","s_45.jpg","s_46.jpg","s_47.jpg","s_48.jpg","s_49.jpg","s_5.jpg","s_50.jpg","s_51.jpg","s_52.jpg","s_53.jpg","s_54.jpg","s_55.jpg","s_56.jpg","s_57.jpg","s_58.jpg","s_59.jpg","s_6.jpg","s_7.jpg","s_8.jpg","s_9.jpg"]
   },
   {
     name: "row", title: "Stone Rows and Walls", example: "images/album_008.jpg",
-    pics: ["s_1.jpg","s_10.jpg","s_11.jpg","s_12.jpg","s_13.jpg","s_14.jpg","s_15.jpg","s_16.jpg","s_17.jpg","s_18.jpg","s_19.jpg","s_2-01.jpg","s_2.jpg","s_20.jpg","s_21.jpg","s_22.jpg","s_23.jpg","s_24.jpg","s_25.jpg","s_26.jpg","s_27.jpg","s_28.jpg","s_29.jpg","s_3.jpg","s_30.jpg","s_31.jpg","s_32.jpg","s_33.jpg","s_34.jpg","s_35.jpg","s_36.jpg","s_37.jpg","s_38.jpg","s_39.jpg","s_4.jpg","s_5.jpg","s_6.jpg","s_7.jpg","s_8.jpg","s_9.jpg"]
+    pics: ["s_1.jpg","s_10.jpg","s_11.jpg","s_12.jpg","s_13.jpg","s_14.jpg","s_15.jpg","s_16.jpg","s_17.jpg","s_18.jpg","s_19.jpg","s_2-01.jpg","s_2.jpg","s_20.jpg","s_21.jpg","s_22.jpg","s_23.jpg","s_24.jpg","s_25.jpg","s_26.jpg","s_27.jpg","s_28.jpg","s_29.jpg","s_3.jpg","s_30.jpg","s_31.jpg","s_32.jpg","s_33.jpg","s_34.jpg","s_35.jpg","s_36.jpg","s_37.jpg","s_38.jpg","s_39.jpg","s_4.jpg","s_40.jpg","s_41.jpg","s_42.jpg","s_43.jpg","s_44.jpg","s_45.jpg","s_46.jpg","s_47.jpg","s_48.jpg","s_49.jpg","s_5.jpg","s_50.jpg","s_51.jpg","s_52.jpg","s_53.jpg","s_54.jpg","s_55.jpg","s_56.jpg","s_57.jpg","s_58.jpg","s_59.jpg","s_6.jpg","s_60.jpg","s_61.jpg","s_63.jpg","s_64.jpg","s_65.jpg","s_66.jpg","s_67.jpg","s_68.jpg","s_69.jpg","s_7.jpg","s_70.jpg","s_71.jpg","s_72.jpg","s_73.jpg","s_74.jpg","s_75.jpg","s_76.jpg","s_77.jpg","s_78.jpg","s_79.jpg","s_8.jpg","s_80.jpg","s_81.jpg","s_82.jpg","s_83.jpg","s_84.jpg","s_85.jpg","s_86.jpg","s_87.jpg","s_88.jpg","s_89.jpg","s_9.jpg","s_90.jpg","s_91.jpg","s_92.jpg","s_93.jpg","s_94.jpg","s_95.jpg","s_97.jpg"]
   },
   {
     name: "circle", title: "Stone Circles and Rings", example: "images/album_006.jpg",
@@ -57,7 +57,7 @@ const Folders = [
   },
   {
     name: "destroyed", title: "Destroyed Site, Canonchet RI", example: "images/album_011.jpg",
-    pics: ["fs_1.JPG","fs_10.JPG","fs_11.JPG","fs_12.JPG","fs_13.JPG","fs_14.JPG","fs_15.JPG","fs_16.JPG","fs_17.JPG","fs_18.JPG","fs_19.JPG","fs_2.JPG","fs_20.JPG","fs_21.JPG","fs_22.JPG","fs_23.JPG","fs_24.JPG","fs_25.JPG","fs_26.JPG","fs_27.JPG","fs_28.JPG","fs_29.JPG","fs_3.JPG","fs_30.JPG","fs_31.JPG","fs_32.JPG","fs_33.JPG","fs_34.JPG","fs_35.JPG","fs_36.JPG","fs_37.JPG","fs_38.JPG","fs_39.JPG","fs_4.JPG","fs_40.JPG","fs_41.JPG","fs_42.JPG","fs_43.JPG","fs_44.JPG","fs_45.JPG","fs_46.JPG","fs_47.JPG","fs_48.JPG","fs_49.JPG","fs_5.JPG","fs_50.JPG","fs_51.JPG","fs_52.JPG","fs_53.JPG","fs_6.JPG","fs_7.JPG","fs_8.JPG","fs_9.JPG"]
+    pics: ["fs_1.jpg","fs_10.jpg","fs_11.jpg","fs_12.jpg","fs_13.jpg","fs_14.jpg","fs_15.jpg","fs_16.jpg","fs_17.jpg","fs_18.jpg","fs_19.jpg","fs_2.jpg","fs_20.jpg","fs_21.jpg","fs_22.jpg","fs_23.jpg","fs_24.jpg","fs_25.jpg","fs_26.jpg","fs_27.jpg","fs_28.jpg","fs_29.jpg","fs_3.jpg","fs_30.jpg","fs_31.jpg","fs_32.jpg","fs_33.jpg","fs_34.jpg","fs_35.jpg","fs_36.jpg","fs_37.jpg","fs_38.jpg","fs_39.jpg","fs_4.jpg","fs_40.jpg","fs_41.jpg","fs_42.jpg","fs_43.jpg","fs_44.jpg","fs_45.jpg","fs_46.jpg","fs_47.jpg","fs_48.jpg","fs_49.jpg","fs_5.jpg","fs_50.jpg","fs_51.jpg","fs_52.jpg","fs_53.jpg","fs_6.jpg","fs_7.jpg","fs_8.jpg","fs_9.jpg"]
   },
   {
     name: "CT", title: "some sites in CT",
@@ -65,7 +65,7 @@ const Folders = [
   },
   {
     name: "MA", title: "some sites in MA", example: "images/album_003.jpg",
-    pics: ["Image2.jpg","P1030740.jpg","P1090837.jpg","album.jpg","album_002.jpg","album_003.jpg","album_004.jpg","album_005.jpg","album_006.jpg"]
+    pics: ["Image2.jpg","P1030740.jpg","P1090837.jpg","album.jpg","album_002.jpg","album_003.jpg","album_004.jpg","album_005.jpg","album_006.jpg","1.jpg","1-01.jpg","4.jpg","5.jpg","6.jpg","10.jpg","10+1.jpg","DSCN1767.jpg","Image1.jpg","Image2.jpg","Image7.jpg","Image14.jpg","P1030708.jpg","P1030740.jpg","P1040875.jpg","P10300171.jpg","perched boulder.jpg"]
   }
 ];
 
