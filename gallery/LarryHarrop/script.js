@@ -86,20 +86,15 @@ if (myFolders && myPics) {
 
   function show(category) {
     myPics.innerHTML = "";
-    let tab = document.getElementById(category);
-    if (!tab) {  // pick one at random
-      category = Folders[Math.floor(Math.random()*Folders.length)].name;
-      tab = document.getElementById(category);
-    }
-    if (!tab) return;
+    let info = Folders.find(info => info.name === category);
+    if (!info) info = Folders[Math.floor(Math.random()*Folders.length)];
+    if (!info) return;
     const myCategory = document.getElementById("myCategory");
-    if (myCategory) myCategory.textContent = `${tab.info.title} (${tab.info.pics.length})`;
-    const name = tab.info.name;
-    const pics = tab.info.pics;
-    pics.forEach(filename => {
+    if (myCategory) myCategory.textContent = `${info.title} (${info.pics.length})`;
+    info.pics.forEach(filename => {
       const img = document.createElement("img");
       img.className = "pic";
-      img.src = `Images%2F${name}%2F${filename}`;
+      img.src = `Images%2F${info.name}%2F${filename}`;
       img.title = filename;
       myPics.append(img);
     });
