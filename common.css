@@ -74,3 +74,8 @@ td, th {
 .highlight {
   color: red;
 }
+
+ttl {
+  font-weight: 500;
+  font-style: italic;
+}
