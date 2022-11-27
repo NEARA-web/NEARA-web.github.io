@@ -1,9 +1,9 @@
-https://neara.org/
 https://neara.org/bios.html
 https://neara.org/chapters.html
 https://neara.org/conferences.html
 https://neara.org/donate.html
 https://neara.org/gallery.html
+https://neara.org/index.html
 https://neara.org/library.html
 https://neara.org/membership.html
 https://neara.org/publications.html
@@ -25,6 +25,7 @@ https://neara.org/chapters/Vermont.html
 https://neara.org/chapters/index.html
 https://neara.org/conferences/2021-11-07.html
 https://neara.org/conferences/2022-04-29.html
+https://neara.org/conferences/2022-11-04.html
 https://neara.org/gallery/LarryHarrop/index.html
 https://neara.org/pages/Delaware_Water_Gap.html
 https://neara.org/pages/Early%20Stone%20Cairns%20and%20Rows%20in%20Eastern%20Pennsylvania.html
