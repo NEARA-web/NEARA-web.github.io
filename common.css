@@ -76,6 +76,11 @@ td, th {
 }
 
 ttl {
-  font-weight: 500;
+  font-size: 12pt;
+  font-weight: bold;
   font-style: italic;
+}
+
+cmnt {
+  font-size: smaller;
 }
