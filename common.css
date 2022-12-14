@@ -82,5 +82,6 @@ ttl {
 }
 
 cmnt {
-  font-size: smaller;
+  font-size: 0.82rem;
+  font-style: italic;
 }
