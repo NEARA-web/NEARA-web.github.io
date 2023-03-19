@@ -71,8 +71,9 @@ td, th {
   padding: 4px;
 }
 
-.highlight {
+em {
   color: red;
+  font-weight: bold;
 }
 
 ttl {
