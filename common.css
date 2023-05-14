@@ -9,6 +9,7 @@ body {
 .topnav {
   overflow: hidden;
   background-color: #333;
+  color: black;
 }
 
 .topnav a {
@@ -61,16 +62,6 @@ li {
   max-width: 900px;
 }
 
-table {
-  border: 1px solid black;
-  border-collapse: collapse;
-}
-
-td, th {
-  border: 0.5px solid black;
-  padding: 4px;
-}
-
 em {
   color: red;
   font-weight: bold;
@@ -86,3 +77,10 @@ cmnt {
   font-size: 0.82rem;
   font-style: italic;
 }
+
+/*@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #222211;
+    color: #CCC;
+  }
+}*/
