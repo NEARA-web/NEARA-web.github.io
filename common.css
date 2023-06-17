@@ -26,18 +26,9 @@ body {
   color: black;
 }
 
-.topnav a:visited {
-  color: #f2f2f2;
-}
-
 .topnav a.active {
   background-color: #eed189;
   color: black;
-}
-
-
-a:visited {
-  color: darkslateblue;
 }
 
 .logotitle {
@@ -87,9 +78,13 @@ cmnt {
   font-style: italic;
 }
 
-/*@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: dark) {
   body {
     background-color: #222211;
     color: #CCC;
   }
-}*/
+
+  a:visited {
+    color: lightblue;
+  }
+}
