@@ -24,7 +24,7 @@
     <a href="/donate.html">Donate</a>
   </div>
 
-  <img alt="New England Antiquities Research Association logo" src="/images/logo.png" class="logotitle">
+  <img src="/images/logo.webp" class="logotitle" alt="New England Antiquities Research Association logo">
 
   <a href="/conferences/2023-04-28.html" target="_blank" rel="noopener" style="color: white; font-size: 1.3rem; text-decoration-line:none;">
     <div style="background: green; padding: 0.5rem; text-align: center; border: 2px solid lightgray; border-radius: 100px;">
@@ -32,8 +32,12 @@
     </div>
   </a>
 
-  <img alt="various lithic features in the northeast, including rock piles, stone rows, stone circles, chambers, standing stones, propped boulders, mounds, petroglyphs, and pictographs" id="IMAGE" src="/images/20131115.jpg"
-       style="max-height:400px" title="Click to see more images, all of which are copyright 2010-2019 Walter van Roggen">
+  <picture style="max-height:400px"
+           title="Click to see more images, all of which are copyright 2010-2019 Walter van Roggen"
+           alt="various lithic features in the northeast, including rock piles, stone rows, stone circles, chambers, standing stones, propped boulders, mounds, petroglyphs, and pictographs">
+    <source id="IMAGE" src="/images/20131115.avif" type="image/avif">
+    <img id="IMAGEFB" src="/images/20131115.jpg">
+  </picture>
 
   <h2>What does NEARA do?</h2>
   <p>
@@ -62,6 +66,18 @@
     Sign up for announcements of news and other interesting information:
     <a href="https://visitor.constantcontact.com/d.jsp?m=1118399192862&amp;p=oi" target="_blank" rel="noopener">Join Our Email List</a>
   </p>
+
+
+  <hr>
+  <h2>NEARA Fall 2023 Conference</h4>
+  <p>
+    The fall conference is tentatively scheduled to take place in Massachusetts from November 10th to November 12th.
+    More details will be announced as decisions are made.
+  </p>
+  <!-- <ul>
+    <li><a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=NEARA%20Fall%20Conference&dates=20231110T120000/20231112T120000&location=Massachusetts" target="_blank" rel="noopener">Add to Google Calendar</a></li>
+    <li><a href="https://outlook.office.com/calendar/0/deeplink/compose?subject=NEARA%20Fall%20Conference&startdt=2023-11-10T12:00:00-05:00&enddt=2023-11-12T12:00:00-05:00&location=Massachusetts&path=%2Fcalendar%2Faction%2Fcompose&rru=addevent&allday=true" target="_blank" rel="noopener">Add to Office 365 calendar</a></li>
+  </ul> -->
 
 
   <hr>
@@ -403,11 +419,15 @@
 
   <script>
     var img = document.getElementById("IMAGE");
-    if (img) {
-      var choices = ["113000.jpg", "184936.jpg", "20131115.jpg", "20140413.jpg", "20190427.jpg", "20190427a.jpg"];
+    var imgfb = document.getElementById("IMAGEFB");
+    if (img && imgfb) {
+      var choices = ["113000", "184936", "20131115", "20140413", "20190427", "20190427a"];
       var i = Math.floor(Math.random() * choices.length);
-      img.onclick = function() { img.src = "images/" + choices[(i++) % choices.length]; };
-      img.onclick();
+      imgfb.onclick = function() {
+        img.src = "images/" + choices[(i++) % choices.length] + ".avif";
+        imgfb.src = "images/" + choices[(i++) % choices.length] + ".jpg";
+      };
+      imgfb.onclick();
     }
   </script>
 </body>
