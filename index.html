@@ -32,11 +32,10 @@
     </div>
   </a>
 
-  <picture style="max-height:400px"
-           title="Click to see more images, all of which are copyright 2010-2019 Walter van Roggen"
-           alt="various lithic features in the northeast, including rock piles, stone rows, stone circles, chambers, standing stones, propped boulders, mounds, petroglyphs, and pictographs">
-    <source id="IMAGE" src="/images/20131115.avif" type="image/avif">
-    <img id="IMAGEFB" src="/images/20131115.jpg">
+  <picture id="PICTURE" title="Click to see more images, all of which are copyright 2010-2019 Walter van Roggen">
+    <source id="IMAGE" srcset="/images/20131115.avif" type="image/avif" style="max-height:400px">
+    <img id="IMAGEFB" src="/images/20131115.jpg" style="max-height:400px"
+         alt="various lithic features in the northeast, including rock piles, stone rows, stone circles, chambers, standing stones, propped boulders, mounds, petroglyphs, and pictographs">
   </picture>
 
   <h2>What does NEARA do?</h2>
@@ -418,16 +417,17 @@
   </p>
 
   <script>
+    var pic = document.getElementById("PICTURE");
     var img = document.getElementById("IMAGE");
     var imgfb = document.getElementById("IMAGEFB");
-    if (img && imgfb) {
+    if (pic && img && imgfb) {
       var choices = ["113000", "184936", "20131115", "20140413", "20190427", "20190427a"];
       var i = Math.floor(Math.random() * choices.length);
-      imgfb.onclick = function() {
-        img.src = "images/" + choices[(i++) % choices.length] + ".avif";
+      pic.onclick = function() {
+        img.srcset = "images/" + choices[(i++) % choices.length] + ".avif";
         imgfb.src = "images/" + choices[(i++) % choices.length] + ".jpg";
       };
-      imgfb.onclick();
+      pic.onclick();
     }
   </script>
 </body>
