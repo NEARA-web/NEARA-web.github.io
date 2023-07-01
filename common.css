@@ -58,6 +58,14 @@ p {
   max-width: 1000px;
 }
 
+p a:link, ul a:link {
+  color: #4040D0;
+}
+
+p a:visited, ul a:visited {
+  color: #208020;
+}
+
 li {
   max-width: 900px;
 }
@@ -80,13 +88,13 @@ cmnt {
 
 @media (prefers-color-scheme: dark) {
   body {
-    background-color: #303311;
+    background-color: #28280F;
     color: #CCC;
   }
-  a:link {
-    color: cyan;
+  p a:link, ul a:link {
+    color: #90B0F0;
   }
-  a:visited {
-    color: lightcyan;
+  p a:visited, ul a:visited {
+    color: #20A000;
   }
 }
