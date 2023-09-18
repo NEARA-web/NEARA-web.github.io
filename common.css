@@ -31,6 +31,10 @@ body {
   color: black;
 }
 
+.topnav div {
+  float: left;
+}
+
 .logotitle {
   display: block;
   margin: 6px 0px;

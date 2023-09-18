@@ -26,9 +26,9 @@
 
   <img src="/images/logo.webp" class="logotitle" alt="New England Antiquities Research Association logo">
 
-  <a href="#Zoom" target="_blank" rel="noopener" style="color: white; font-size: 1.3rem; text-decoration-line:none;">
+  <a href="#Conference" target="_blank" rel="noopener" style="color: white; font-size: 1.3rem; text-decoration-line:none;">
     <div style="background: green; padding: 0.5rem; text-align: center; border: 2px solid lightgray; border-radius: 100px;">
-      <span style="color: white; font-weight: bold;">Triad of Digital Technologies Investigates the Newport Tower</span>
+      <span style="color: white; font-weight: bold;">2023 Fall Conference in Marlborough MA, November 10th-12th</span>
     </div>
   </a>
 
@@ -68,28 +68,34 @@
 
 
   <hr>
-  <h2 id="Zoom">Triad of Digital Technologies Investigates the Newport Tower</h2>
+  <h2 id="Conference">NEARA's Research: Past, Present, and Future</h2>
   <p>
-    There was a Zoom webinar on Thursday August 24th.  View the video:
+    The fall conference will take place from November 10th to November 12th, at the Courtyard by Marriott in Marlborough Massachusetts.
   </p>
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/OdPwKQdxAWg?si=DQJxUmwo55kjyCa9" title="Triad of Digital Technologies" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  <p>
+    The keynote speaker will be Andre StrongBearHeart Gaines, a Nipmuc Cultural Steward and board member of the Native Land Conservancy.
+    Read the
+    <a href="https://drive.google.com/file/d/1LbcO7CPtMtoHCDv8CMCEQVHfZlbO7UE7" target="_blank" rel="noopener">Full Program</a>
+  </p>
+  <!-- <p>
+    Register now for the Fall Conference:
+    <a href="https://events.r20.constantcontact.com/register/eventReg?oeidk=a07ejynj4ep414cfdaa" target="_blank" rel="noopener">Online Registration</a>
+  </p> -->
 
 
-  <hr>
-  <h2 id="Conference">NEARA Fall 2023 Conference</h2>
-  <p>
-    The fall conference is scheduled to take place in Marlborough Massachusetts from November 10th to November 12th.
-    More details will be announced as decisions are made.
-  </p>
-  <!-- <ul>
-    <li><a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=NEARA%20Fall%20Conference&dates=20231110T120000/20231112T120000&location=Massachusetts" target="_blank" rel="noopener">Add to Google Calendar</a></li>
-    <li><a href="https://outlook.office.com/calendar/0/deeplink/compose?subject=NEARA%20Fall%20Conference&startdt=2023-11-10T12:00:00-05:00&enddt=2023-11-12T12:00:00-05:00&location=Massachusetts&path=%2Fcalendar%2Faction%2Fcompose&rru=addevent&allday=true" target="_blank" rel="noopener">Add to Office 365 calendar</a></li>
-  </ul> -->
   <h2>NEARA Spring 2024: the Eclipse Conference</h2>
   <p>
     The spring conference is scheduled to take place in East Burke Vermont from April 6th to April 8th.
     The theme will be archaeoastronomy.  More details will be announced as decisions are made.
   </p>
+
+
+  <hr>
+  <h2 id="Zoom">Triad of Digital Technologies Investigates the Newport Tower</h2>
+  <p>
+    There was a Zoom webinar on Thursday August 24th.  View the video:
+  </p>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/OdPwKQdxAWg?si=DQJxUmwo55kjyCa9" title="Triad of Digital Technologies" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 
   <hr>
@@ -356,15 +362,16 @@
   </p>
 
   <script>
-    var pic = document.getElementById("PICTURE");
-    var img = document.getElementById("IMAGE");
-    var imgfb = document.getElementById("IMAGEFB");
+    const pic = document.getElementById("PICTURE");
+    const img = document.getElementById("IMAGE");
+    const imgfb = document.getElementById("IMAGEFB");
     if (pic && img && imgfb) {
-      var choices = ["113000", "184936", "20131115", "20140413", "20190427", "20190427a"];
-      var i = Math.floor(Math.random() * choices.length);
+      const choices = ["113000", "184936", "20131115", "20140413", "20190427", "20190427a"];
+      let i = Math.floor(Math.random() * choices.length);
       pic.onclick = function() {
-        img.srcset = "images/" + choices[(i++) % choices.length] + ".avif";
-        imgfb.src = "images/" + choices[(i++) % choices.length] + ".jpg";
+        img.srcset = "images/" + choices[i % choices.length] + ".avif";
+        imgfb.src = "images/" + choices[i % choices.length] + ".jpg";
+        i++;
       };
       pic.onclick();
     }
