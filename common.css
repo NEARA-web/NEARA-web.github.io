@@ -1,11 +1,12 @@
 body {
   margin: 10px;
   background-color: #f1e9d5;
-  /*font-family: Arial, Helvetica, sans-serif;*/
-  /*font-size: 12.5pt;*/
+  /*font-family: Arial, Helvetica, sans-serif;
+  font-size: 12.5pt;
+  color: #333;*/
   font-family: Georgia, serif;
   font-size: 13pt;
-  color: #333;
+  color: black;
 }
 
 .topnav {
@@ -18,7 +19,7 @@ body {
   float: left;
   color: #f2f2f2;
   text-align: center;
-  padding: 10px 4px;
+  padding: 9px 3.5px;
   text-decoration: none;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 12.5pt;
@@ -38,18 +39,18 @@ body {
   float: left;
 }
 
+img {
+  margin: 10px 2px;
+  max-width: 100%;
+  max-height: 400px;
+}
+
 .logotitle {
   display: block;
   margin: 6px 0px;
   max-width: 100%;
   width: 450px;
   height: 110px;
-}
-
-img {
-  margin: 10px 2px;
-  max-width: 100%;
-  max-height: 400px;
 }
 
 .cover {
@@ -91,8 +92,8 @@ em {
 }
 
 ttl {
-  /*font-size: 12pt;*/
-  /*font-weight: bold;*/
+  /*font-size: 12pt;
+  font-weight: bold;*/
   font-style: italic;
 }
 
@@ -107,7 +108,7 @@ cmnt {
     color: #CCC;
   }
   .logotitle {
-    filter: invert(1) hue-rotate(255deg);
+    filter: invert(1) hue-rotate(180deg);
   }
   p a:link, ul a:link {
     color: #90B0F0;
