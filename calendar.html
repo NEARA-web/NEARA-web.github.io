@@ -8,6 +8,13 @@
   <link href="/common.css" rel="stylesheet">
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-0QW45RRVV9"></script>
   <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-0QW45RRVV9');</script>
+  <style>
+    /* @media (prefers-color-scheme: dark) { */
+      #calframe {
+        filter: invert(.9) saturate(0.6) hue-rotate(120deg);
+      }
+    /* } */
+  </style>
 </head>
 <body>
   <div class="topnav">
@@ -28,15 +35,13 @@
 
   <h2>Events of Interest</h2>
 
-  <p>
-    Want to keep the calendar up-to-date?
-    Volunteer to manage it!
-    It won't take much of your time and you'll get first notice on so many interesting talks that are happening all the time.
-    Contact us at <a href="mailto:webmaster@neara.org">webmaster@neara.org</a>.
-  </p>
-
   <iframe
+    id="calframe"
     src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=America%2FNew_York&showTitle=0&showCalendars=0&showNav=1&mode=AGENDA&src=Y2FsZW5kYXJAbmVhcmEub3Jn&color=%230B8043"
-    width="100%" height="600" frameborder="0" scrolling="no"
-    style="border-width:0; filter:invert(.9) saturate(0.6) hue-rotate(120deg)"></iframe>
+    width="100%" height="600" frameborder="0" scrolling="no" style="border-width:0"></iframe>
+
+  <p>
+    Have an event you want to add to this calendar?
+    Send email to <a href="mailto:calendar@neara.org">calendar@neara.org</a>.
+  </p>
 </body>
