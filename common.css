@@ -105,7 +105,7 @@ cmnt {
 @media (prefers-color-scheme: dark) {
   body {
     background-color: #28280F;
-    color: #CCC;
+    color: #D8D8C8;
   }
   .logotitle {
     filter: invert(1) hue-rotate(180deg);
