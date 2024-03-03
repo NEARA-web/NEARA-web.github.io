@@ -103,7 +103,7 @@ cmnt {
 }
 
 .copyright {
-  font-size: 0.8rem;
+  font: italic 9.5pt sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {
