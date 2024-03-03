@@ -102,6 +102,10 @@ cmnt {
   font-style: italic;
 }
 
+.copyright {
+  font-size: 0.8rem;
+}
+
 @media (prefers-color-scheme: dark) {
   body {
     background-color: #28280F;
