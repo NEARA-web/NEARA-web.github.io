@@ -8,8 +8,22 @@
   <link href="/common.css" rel="stylesheet">
   <style>
     .tooltip {
+      position: fixed;
+      z-index: 100;
+      width: 300px;
+      height: 250px;
+      overflow:auto;
+      padding-left: 10px;
       background-color: #28280F;
       color: #D8D8C8;
+      border-radius: 12px;
+    }
+    .list {
+      position: static;
+      width: 100%;
+      height: auto;
+      background-color: inherit;
+      color: inherit;
     }
   </style>
 </head>
@@ -88,7 +102,7 @@
 
   <div id="myDiagramDiv" style="border: solid 1px gray; width: 100%; height: 600px; background:whitesmoke"></div>
 
-  <div id="myInfo" class="tooltip" style="position: fixed; z-index: 100; width: 300px; height: 250px; overflow:auto; padding-left: 10px; display: none; border-radius: 12px;">
+  <div id="myInfo" class="tooltip" style="display:none">
 
     <h3 id="1">NEARA Member</h3>
     <ul>
@@ -124,7 +138,7 @@
     <ul>
       <li>Oversees conferences</li>
       <li>Makes sure the conference program, local arrangements, audio/visual arrangements, field trips, and their publicity are handled</li>
-      <li>Provides budget to Treasurer and Finance</li>
+      <li>Provides budget numbers to Treasurer and Finance</li>
     </ul>
 
     <h3 id="7">Conference Program Subcommittee</h3>
@@ -143,6 +157,7 @@
     <h3 id="9">Conference Field Trips Subcommittee</h3>
     <ul>
       <li>Chooses and arranges field trips led by field trip leaders before and after the conference</li>
+      <li>Typically includes the local Chapter Coordinator</li>
     </ul>
 
     <h3 id="10">Conference Audio/Visual Subcommittee</h3>
@@ -183,7 +198,7 @@
     <h3 id="15">Research and Special Projects Committee</h3>
     <ul>
       <li>Promotes research, solicits and recommends projects, sets guidelines and standards, and manages site reports</li>
-      <li>Provides budget to Treasurer and Finance</li>
+      <li>Provides budget numbers to Treasurer and Finance</li>
     </ul>
 
     <h3 id="16">Site Reporting Subcommittee</h3>
@@ -195,7 +210,7 @@
     <h3 id="17">Publications Committee</h3>
     <ul>
       <li>Publishes the Journal, the Transit, and printed Conference flyers/brochures</li>
-      <li>Provides budget to Treasurer and Finance</li>
+      <li>Provides budget numbers to Treasurer and Finance</li>
       <li>Depends on Program Committee, Editors, Reviewers, Design/Layout, and printer/mailer</li>
     </ul>
 
@@ -222,7 +237,7 @@
     <h3 id="22">Library and Archives Committee</h3>
     <ul>
       <li>Provides policy guidance to Librarians and Archivists and occasional help</li>
-      <li>Provides budget to Treasurer and Finance</li>
+      <li>Provides budget numbers to Treasurer and Finance</li>
     </ul>
 
     <h3 id="23">Librarian</h3>
@@ -328,10 +343,6 @@
 
   </div>
 
-  <p>
-    
-  </p>
-
   <textarea id="mySavedModel" style="width: 100%; height: 300px; display: none"></textarea>
 
   <script src="https://unpkg.com/gojs@beta"></script>
@@ -381,8 +392,7 @@ const myDiagram = new go.Diagram("myDiagramDiv", {
 function highlight(node, show) {
   if (show) {
     myDiagram.highlight(node);
-    const elt = document.getElementById(node.key);
-    if (elt) elt.scrollIntoView();
+    myInfo.className = "tooltip";
     const dpt = myDiagram.lastInput.documentPoint;
     const dcntr = myDiagram.viewportBounds.center;
     const b = myDiagram.div.getBoundingClientRect();
@@ -401,9 +411,11 @@ function highlight(node, show) {
     myDiagram.parts.each(part => {
       if (part.alignment.equals(go.Spot.TopLeft)) part.visible = false;
     });
+    const elt = document.getElementById(node.key);
+    if (elt) elt.scrollIntoView();
   } else {
     myDiagram.clearHighlighteds();
-    myInfo.style.display = "none";
+    myInfo.className = "list";
   }
 }
 
