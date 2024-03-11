@@ -399,11 +399,8 @@ function highlight(node, show) {
     const dcntr = myDiagram.viewportBounds.center;
     const b = myDiagram.div.getBoundingClientRect();
     const vpt = myDiagram.lastInput.viewPoint;
-    if (dpt.x < dcntr.x) {
-      myInfo.style.left = (vpt.x + 25) + "px";
-    } else {
-      myInfo.style.left = (vpt.x - 325) + "px";
-    }
+    const x = Math.max(0, Math.min(b.width - 300, vpt.x - 300/2));
+    myInfo.style.left = x + "px";
     if (dpt.y < dcntr.y) {
       myInfo.style.top = (vpt.y + 10 + b.y) + "px";
     } else {
