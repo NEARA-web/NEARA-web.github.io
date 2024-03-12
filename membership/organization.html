@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Activities and Relationships of NEARA Roles" />
-  <title>Activities and Relationships of NEARA Roles</title>
+  <title>A Newer NEARA Organization</title>
   <link href="/common.css" rel="stylesheet">
   <style>
     .tooltip {
@@ -58,7 +58,7 @@
   <h3>Program Committee</h3>
   <p>
     There is a new <b>Program Committee</b> (<a href="mailto:program@neara.org">program@neara.org</a>)
-    which is meant to help multiple jobs in NEARA, and not only for conferences but for publications as well.
+    which is meant to help multiple jobs in NEARA -- not only for conferences but for publications as well.
     The purpose of the <b>Program Committee</b> is to help find good presenters or good authors about topics of interest to members.
     It must operate year-around in order to provide recommendations for the different publishers of content.
     It should also provide some institutional memory, which will help smooth relationships in the future.
@@ -207,12 +207,6 @@
       <li>Coordinates with Video Editor to post edited videos online after getting approval</li>
     </ul>
 
-    <h3 id="39">Conference Publicity Subcommittee</h3>
-    <ul>
-      <li>Publicizes NEARA events at local historical societies, conservation groups,
-        and other means of contacting people who would be interested</li>
-    </ul>
-
     <h3 id="11">Webinar Manager</h3>
     <ul>
       <li>Manages the Zoom meetings software and makes sure each presenter has the equipment and experience to use it</li>
@@ -237,7 +231,9 @@
 
     <h3 id="14">Director-at-Large</h3>
     <ul>
-      <li>Helps NEARA with expertise and wisdom at Board meetings and on committees</li>
+      <li>A list of suggested responsibilities and activities is at:
+        <a href="https://drive.google.com/file/d/12vLe5puaIy7_BCR28-lk9RXTb0gy9gWg" target="_blank" rel="noopener">Director-at-Large Duties</a> </li>
+      <li>Helps NEARA with expertise and wisdom at Board meetings and on committees or in other roles</li>
     </ul>
 
     <h3 id="15">Research and Special Projects Committee</h3>
@@ -248,7 +244,7 @@
 
     <h3 id="16">Site Reporting Subcommittee</h3>
     <ul>
-      <li>Gathers information for inclusion in sitedb.org</li>
+      <li>Gathers information for inclusion in <a href="https://sitedb.org">SiteDB.org</a></li>
       <li>Encourages report quality</li>
     </ul>
 
@@ -319,7 +315,7 @@
 
     <h3 id="28">Webmaster</h3>
     <ul>
-      <li>Manages the neara.org website</li>
+      <li>Produces the <a href="/">neara.org</a> website</li>
     </ul>
 
     <h3 id="29">Forum Moderator</h3>
@@ -330,7 +326,7 @@
 
     <h3 id="30">Social Media Manager</h3>
     <ul>
-      <li>Posts on various social media sites to enhance NEARA's profile</li>
+      <li>Posts on Facebook and various social media sites to enhance NEARA's profile</li>
       <li>Summarizes and passes on any feedback to the Mem Comm or to the Board</li>
       <li>Seeks additional venues for presence and activity</li>
     </ul>
@@ -338,7 +334,7 @@
     <h3 id="31">Calendar Manager</h3>
     <ul>
       <li>Posts events on the NEARA Calendar</li>
-      <li>Seeks additional sources of events, to be sent to calendar@neara.org</li>
+      <li>Seeks additional sources of events, to be sent to <a href="mailto:calendar@neara.org">calendar@neara.org</a></li>
     </ul>
 
     <h3 id="32">Finance Committee</h3>
@@ -367,7 +363,7 @@
       <li>Keeps all NEARA members, but especially those particularly interested in their chapter, aware of what's going on,
         including reports twice a year at conferences/webinars and in the Transit</li>
       <li>Arranges field trips throughout the areas where NEARA members live</li>
-      <li>Encourages new membership and look for leaders to help you with field trips and other activities</li>
+      <li>Encourages new membership and looks for leaders to help you with field trips and other activities</li>
     </ul>
 
     <h3 id="36">Nominating Committee</h3>
@@ -384,6 +380,12 @@
     <h3 id="38">Video Publisher</h3>
     <ul>
       <li>Publishes videos to our YouTube channel</li>
+    </ul>
+
+    <h3 id="39">Conference Publicity Subcommittee</h3>
+    <ul>
+      <li>Publicizes NEARA events at local historical societies, conservation groups,
+        and any other means of contacting people who would be interested</li>
     </ul>
 
   </div>
@@ -428,9 +430,15 @@ const myDiagram = new go.Diagram("myDiagramDiv", {
       new go.TextBlock({ textAlign: "center", font: "bold 10pt sans-serif" })
         .bind("text")
     ),
-  linkTemplate: new go.Link()
+  linkTemplate: new go.Link({ selectionAdorned: false })
     .add(
       new go.Shape({ strokeWidth: 1.5 })
+    ),
+  groupTemplate: new go.Group("Auto", { layerName: "Background", selectionAdorned: false, resizable: true, resizeObjectName: "SHAPE" })
+    .bindTwoWay("location", "loc", go.Point.parse, go.Point.stringifyFixed(0))
+    .add(
+      new go.Shape("Ellipse", { name: "SHAPE", fill: "whitesmoke", strokeDashArray: [4, 2] })
+        .bind("desiredSize", "size", go.Size.parse, go.Size.stringify)
     )
 });
 
@@ -492,23 +500,24 @@ myDiagram.model = go.Model.fromJson(`
 { "class": "GraphLinksModel",
   "nodeDataArray": [
 {"key":1,"text":"NEARA\\nMember","loc":"37 50"},
-{"key":2,"text":"Board of\\nDirectors","loc":"599 418","comm":true},
+{"key":2,"text":"Board of\\nDirectors","loc":"580 406","comm":true},
 {"key":3,"text":"Treasurer","loc":"500 480"},
-{"key":4,"text":"President","loc":"749 449"},
+{"key":4,"text":"President","loc":"723 443"},
 {"key":5,"text":"Program\\nCommittee","loc":"346 158","comm":true},
-{"key":6,"text":"First Vice\\nPresident","loc":"769 275"},
-{"key":7,"text":"Conference\\nProgram","loc":"619 211"},
-{"key":8,"text":"Conference\\nArrangements","loc":"638 318"},
-{"key":9,"text":"Conference\\nField Trips","loc":"618 265"},
-{"key":10,"text":"Conference\\nAudio/Visual","loc":"677 154"},
-{"key":11,"text":"Webinar\\nManager","loc":"707 75"},
+{"key":6,"text":"First Vice\\nPresident","loc":"765 292","group":-1},
+{"key":-1,"isGroup":true,"loc":"550 114","size":"306 250"},
+{"key":7,"text":"Conference\\nProgram","loc":"610 210","group":-1},
+{"key":8,"text":"Conference\\nArrangements","loc":"641 309","group":-1},
+{"key":9,"text":"Conference\\nField Trips","loc":"611 262","group":-1},
+{"key":10,"text":"Conference\\nAudio/Visual","loc":"712 140","group":-1},
+{"key":11,"text":"Webinar\\nManager","loc":"613 93"},
 {"key":12,"text":"Second Vice\\nPresident","loc":"445 374"},
 {"key":13,"text":"Secretary","loc":"669 477"},
 {"key":14,"text":"Director-\\nat-Large","loc":"726 396","mult":true},
 {"key":15,"text":"Research and\\nSpecial Projects","loc":"88 523","comm":true},
 {"key":16,"text":"Site\\nReporting","loc":"31 450"},
-{"key":17,"text":"Publications","loc":"316 262","comm":true},
-{"key":18,"text":"Journal\\nEditor","loc":"331 218"},
+{"key":17,"text":"Publications","loc":"310 249","comm":true},
+{"key":18,"text":"Journal\\nEditor","loc":"333 212"},
 {"key":19,"text":"Transit\\nEditor","loc":"248 208"},
 {"key":20,"text":"Reviewer","loc":"457 200","mult":true},
 {"key":21,"text":"Publication\\nDesign/Layout","loc":"450 248"},
@@ -516,20 +525,21 @@ myDiagram.model = go.Model.fromJson(`
 {"key":23,"text":"Librarian","loc":"245 395"},
 {"key":24,"text":"Archivist","loc":"230 430"},
 {"key":25,"text":"Book Table","loc":"293 369"},
-{"key":26,"text":"Member\\nCommunications","loc":"498 67","comm":true},
-{"key":27,"text":"Membership","loc":"480 -41","comm":true},
-{"key":28,"text":"Webmaster","loc":"395 116"},
-{"key":29,"text":"Forum","loc":"428 -16"},
-{"key":30,"text":"Social Media","loc":"327 81"},
-{"key":31,"text":"Calendar","loc":"379 9"},
+{"key":-2,"isGroup":true,"loc":"250 -68","size":"336 200"},
+{"key":26,"text":"Member\\nCommunications","loc":"504 49","comm":true,"group":-2},
+{"key":27,"text":"Membership","loc":"447 -47","comm":true,"group":-2},
+{"key":28,"text":"Webmaster","loc":"404 116","group":-2},
+{"key":29,"text":"Forum","loc":"409 -20","group":-2},
+{"key":30,"text":"Social Media","loc":"354 88","group":-2},
+{"key":31,"text":"Calendar","loc":"376 5","group":-2},
 {"key":32,"text":"Finance","loc":"586 494","comm":true},
-{"key":33,"text":"Resource\\nDevelopment","loc":"146 472","comm":true},
+{"key":33,"text":"Resource\\nDevelopment","loc":"148 476","comm":true},
 {"key":34,"text":"Preservation","loc":"236 523","comm":true},
-{"key":35,"text":"Chapter\\nCoordinator","loc":"327 323","mult":true},
-{"key":36,"text":"Nominating","loc":"722 524","comm":true},
-{"key":37,"text":"Video\\nEditor","loc":"631 35"},
-{"key":38,"text":"Video\\nPublisher","loc":"332 40"},
-{"key":39,"text":"Conference\\nPublicity","loc":"773 124"}
+{"key":35,"text":"Chapter\\nCoordinator","loc":"329 324","mult":true},
+{"key":36,"text":"Nominating","loc":"760 513","comm":true},
+{"key":37,"text":"Video\\nEditor","loc":"628 10"},
+{"key":38,"text":"Video\\nPublisher","loc":"332 40","group":-2},
+{"key":39,"text":"Conference\\nPublicity","loc":"787 190","group":-1}
 ],
   "linkDataArray": [
 {"from":1,"to":27},
@@ -598,7 +608,8 @@ myDiagram.model = go.Model.fromJson(`
 {"from":39,"to":6},
 {"from":20,"to":11},
 {"from":6,"to":26},
-{"from":35,"to":26}
+{"from":35,"to":26},
+{"from":1,"to":11}
 ]}
 `);
   </script>
