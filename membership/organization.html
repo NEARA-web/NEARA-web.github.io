@@ -49,7 +49,7 @@
   <p>
     It has been difficult to find volunteers for many of the jobs that need to be done for NEARA to be successful.
     Partly this may be due to people not understanding what a job entails, or simply that a job seems too daunting to take on.
-    So it would help to list the jobs with a summary of each one, and to make the jobs as small and simple and independent as possible.
+    So it would help to make the jobs as small and simple and independent as possible, and to list the jobs with a summary of each one.
   </p>
   <p>
     In particular, the job of the <b>First Vice President</b> can be more explicitly partitioned into
@@ -86,9 +86,9 @@
     <li>The <b>Membership Committee</b> will continue operating mostly via email.</li>
     <li>
       NEARA used to have an online forum (Yahoo Group) for discussion by NEARA members.
-      We could engage with them more by resuscitating it as a Google Group (i.e. mailing list).
-      Even though the group would only be open to NEARA members, it will need to have a moderator to ensure quality
-      and to manage the membership.
+      We could resuscitate it as a Google Group (i.e. mailing list).
+      Even though the group would only be open to NEARA members,
+      it will need to have a moderator to ensure quality and to manage the membership.
     </li>
     <li>
       The <a href="/calendar.html">NEARA Calendar</a> notifies people about potential events of interest.
@@ -99,7 +99,7 @@
       lists videos that we have recorded.  Some day we might include ones recorded from decades ago.
     </li>
     <li>
-      Our <a href="https://www.facebook.com/Neara-102263879902502/">Facebook page</a> also can increase our exposure.
+      Our <a href="https://www.facebook.com/Neara-102263879902502/">Facebook page</a> can also increase our exposure.
     </li>
     <li>
       Our <a href="/">web site</a> can not only provide a public repository of what NEARA has been involved with,
@@ -107,6 +107,7 @@
     </li>
     <li>
       Additional opportunities exist via the internet -- time will tell which ones pan out.
+      The MemComms committee is interested in hearing how you want to interact with NEARA.
     </li>
   </ul>
 
@@ -138,6 +139,7 @@
   <p>
     The diagram below shows some of the interactions that can be expected, focusing on a NEARA member,
     with a deemphasis of some roles played by people on the <b>Board of Directors</b>.
+    Click on a node to see a list of some of the job's roles.
   </p>
 
   <div id="myDiagramDiv" style="border: solid 1px gray; width: 100%; height: 600px; background:whitesmoke"></div>
@@ -431,6 +433,7 @@ const myDiagram = new go.Diagram("myDiagramDiv", {
       locationSpot: go.Spot.Center,
       selectionAdorned: false,
       click: (e, node) => highlight(node, true),
+      cursor: "pointer"
     })
     .bindTwoWay("location", "loc", go.Point.parse, go.Point.stringifyFixed(0))
     .add(
@@ -447,7 +450,12 @@ const myDiagram = new go.Diagram("myDiagramDiv", {
     .add(
       new go.Shape({ strokeWidth: 1.5 })
     ),
-  groupTemplate: new go.Group("Auto", { layerName: "Background", selectionAdorned: false, resizable: true, resizeObjectName: "SHAPE" })
+  groupTemplate: new go.Group("Auto", {
+      layerName: "Background",
+      selectionAdorned: false,
+      resizable: true, resizeObjectName: "SHAPE",
+      click: e => highlight(null, false)
+    })
     .bindTwoWay("location", "loc", go.Point.parse, go.Point.stringifyFixed(0))
     .add(
       new go.Shape("Ellipse", { name: "SHAPE", fill: "whitesmoke", strokeDashArray: [4, 2] })
