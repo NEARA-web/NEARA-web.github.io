@@ -4,6 +4,7 @@ https://neara.org/calendar.html
 https://neara.org/chapters.html
 https://neara.org/conferences.html
 https://neara.org/donate.html
+https://neara.org/forum.html
 https://neara.org/gallery.html
 https://neara.org/library.html
 https://neara.org/membership.html
