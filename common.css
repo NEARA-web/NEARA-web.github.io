@@ -106,6 +106,10 @@ dt {
   font-variant-caps: small-caps;
 }
 
+dd {
+  margin-bottom: 0.5em;
+}
+
 .copyright {
   font: italic 9.5pt sans-serif;
 }
