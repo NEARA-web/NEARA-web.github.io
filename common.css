@@ -102,6 +102,10 @@ cmnt {
   font-style: italic;
 }
 
+dt {
+  font-variant-caps: small-caps;
+}
+
 .copyright {
   font: italic 9.5pt sans-serif;
 }
