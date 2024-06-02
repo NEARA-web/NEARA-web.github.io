@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Chuck Drayton's Stone Sites map of Foxboro State Forest" />
+  <title>Chuck Drayton's Stone Sites map of Foxboro State Forest</title>
+  <link href="/common.css" rel="stylesheet">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-0QW45RRVV9"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-0QW45RRVV9');</script>
+  <style>
+    body { background: #EEE; }
+    img { max-height: 100%; }
+  </style>
+  <script>
+const data = {
+  "A": {
+    "type": "Perched Rock",
+    "coords": [246,261],
+    "gps": [42.058967, -71.283450],
+    "loc": "Approximately 1/4 mile south of the High Rock Tower, just NE of the High Rock Road. Small path on the east side of the road leading to this formation, about 40 yards into forest.",
+    "desc": "Single large boulder, approximately 5' in height, resting on three smaller rocks. Found in open area."
+  },
+  "B": {
+    "type": "Prayer Seat",
+    "coords": [247,238],
+    "gps": [42.060883, -71.283150],
+    "loc": "Approximately 1/4 mile due north of the perched rock [map button A. No trails to this site, must bush whack through the woods to find.",
+    "desc": "Horseshoe shaped wall of rocks. Structure opening to the northeast (Azimuth =50 MN), and also opening toward two very large boulders approximately 50 yards away. Wall approximately 3.5 feet tall and about 6 feet in length."
+  },
+  "C": {
+    "type": "Prayer Seat",
+    "coords": [287,277],
+    "gps": [42.058717, -71.282083],
+    "loc": "Travel SE from tower on High Rock Road. Pass by Megley Trail Entrance on right and down incline. Bottom of incline take trail on left. Travel in 100 yards, bushwhack on left another 100 yards.",
+    "desc": "Nicely shaped prayer seat. Azimuth reading +0 MN, opening toward a hill. Ten feet wide, three feet high. Hollowed out sitting area. "
+  },
+  "D": {
+    "type": "Dolmen",
+    "coords": [265,389],
+    "gps": [42.053933, -71.283067],
+    "loc": "About 1/4 mile west from the intersection of the Megley Trail with High Rock Road. Located on the south side of the road, located in a very open, flat rock surface.",
+    "desc": "Long oblong rock , 10 feet long, 7 feet wide, 2 feet high - supported by 3 small rocks. Cut in rock points to neaby line of boulders (below)."
+  },
+  "D2": {
+    "type": "Aligned Boulders",
+    "coords": [275,399],
+    "gps": [42.053944, -71.283056],
+    "loc": "About 100 feet southeast of the dolmen shown above. Standing on the dolmen, follow the directional crack on its surface and it points in the boulder's direction.",
+    "desc": "Four perfectly lined boulders. Each of the rocks are 22 feet apart. The formation of stones is in a perfect North/South line. Largest boulder on the south end is about 6' in diameter, and each of the other three stones is slightly smaller."
+  },
+  "E": {
+    "type": "Prayer Seat",
+    "coords": [235,425],
+    "gps": [42.051850, -71.284417],
+    "loc": "Approximately 1/3 mile west from the intersection of the Megley Trail and High Rock Road. Located on a steep incline, About 50 yards south off the road.",
+    "desc": "Very large horseshoe shaped wall of rocks. 12 feet long, 6 feet high. U-structure opening to the north (and a steep hill). Azimuth = -20 MN"
+  },
+  "F": {
+    "type": "Standing Stone",
+    "coords": [252,370],
+    "gps": [42.054383, -71.283583],
+    "loc": "Directly across the Megley trail from the dolmen (see map button D), about 50' into the woods. No trail to this location, must bush whack to its location. ",
+    "desc": "Large pointed rock. Original structure has broken into 3 sections. Two sections(above), 3rd section (original base) on rock above."
+  },
+  "G": {
+    "type": "Aligned Boulders",
+    "coords": [251,345],
+    "gps": [42.055500, -71.283550],
+    "loc": "Take the Acorn Trail west from the Megley Trail. about 1/4 mile into the woods this location is on the right hand side about 30 yards into the woods. Deer path marks location.",
+    "desc": "Six boulders in a North/South alignment. The boulder row is bordered on its south side by a small rock wall."
+  },
+  "H": {
+    "type": "Standing Stone",
+    "coords": [234,403],
+    "gps": [42.053517, -71.284683],
+    "loc": "About 50 yards off the Megley Trail. Hard to spot, not trails near. Location is directly north of the large prayer seat seen at Map Button E.",
+    "desc": "Large pointed rock. Smaller supporting stones located all around the base. Hikers have stacked small rocks on the top."
+  },
+  "I": {
+    "type": "Prayer Seat",
+    "coords": [231,373],
+    "gps": [42.054433, -71.285333],
+    "loc": "About 1/4 mile north off of the Megley Trail. Nearby path brings you right by the location, however cannot be seen because formation is on ledge above the trail level. ",
+    "desc": "Prayer Seat structure located at the top of a stone ring. Apparently used as fireplace for campsite - ashes found in prayer seat area."
+  },
+  "J": {
+    "type": "Perched Rock",
+    "coords": [180,509],
+    "gps": [42.048533, -71.289500],
+    "loc": "Trail starts just to right of dirt road at Thurston Street entrance to forest. About 1/4 mile north on trail, on the right, approximately 50' off trail.",
+    "desc": "Large boulder perched on two smaller stones. Boulder 9 feet wide, 6 feet tall, and about 25' in circumference."
+  },
+  "K": {
+    "type": "Perched Rock",
+    "coords": [212,508],
+    "gps": [42.049533, -71.285517],
+    "loc": "Approximately 1/2 mile into the woods traveling north on the Thurston Street Trail. Formation is on the left hand side of about 50' off the trail.",
+    "desc": "Single large Boulder resting on a smaller boulder. Large boulder is 12 feet long, 7 feet wide, 6 feet high, and about 26 feet in circumference. Rock formation is pointing directly east."
+  },
+  "L": {
+    "type": "Standing Stone",
+    "coords": [238,514],
+    "gps": [42.049517, -71.284917],
+    "loc": "Approximately 50 feet north on the Thurston Trail from the Pointer Rock (Map button K). Formation very small, hard to see. Very similar in structure seen on Button H.",
+    "desc": "Single small pointed rock. Approximately 2 feet tall, surrounded at the base with support stones."
+  },
+  "M": {
+    "type": "Perched Rock",
+    "coords": [264,482],
+    "gps": [42.049867, -71.284000],
+    "loc": "About 1/2 mile south of the Megley Trail on special trail marked on map. Perched rock is on the right approximately 100' off the trail.",
+    "desc": "Single large stone resting on top of two smaller stones. Size of large boulder is 7 feet long, 4 feet high, and 19 feet in circumference."
+  },
+  "N": {
+    "type": "Stone Ring",
+    "coords": [287,471],
+    "gps": [42.050250, -71.283033],
+    "loc": "About 1/2 mile south off of the Megley Trail on trail indicated on map. Located on the left hand side, about 200 feet off the trail, very hard to see. Recently made stone pile near by.",
+    "desc": "Curious ring of stones. Possible pointer stone at base. Dimensions of the structure are 8 feet long by 6 feet wide."
+  },
+  "O": {
+    "type": "Prayer Seat",
+    "coords": [303,400],
+    "gps": [42.052817, -71.280450],
+    "loc": "About 1/2 mile south of the Megley Trail off the dirt bike trail indicated on the map. If traveling south on that trail, the structure is on the left hand side, about 50 feet off the trail.",
+    "desc": "Prayer Seat structure, fairly small, 6 feet wide, about 2 feet high. The U-shape of the structure opens to the north."
+  },
+  "P": {
+    "type": "Perched Rock",
+    "coords": [205,382],
+    "gps": [42.053150, -71.286167],
+    "loc": "Trail going north about 1/4 north of the Megley Trail On left follow small deer trail over two rock table tops. This structure is at the back of the second table top.",
+    "desc": "Single boulder, about 4'x3'x3' perched on top of a single stone about eight inches in diameter."
+  },
+  "Q": {
+    "type": "Standing Stone",
+    "coords": [220,395],
+    "gps": [42.052817, -71.284683],
+    "loc": "Traveling exactly North from the Large prayer seat (button E), go up and over the Megley trail, and then continue due north for about 100 yards. No other trails nearby.",
+    "desc": "Single stone about 4 feet high, tall and narrow. Stone has cracked and is very unstable .but still in one piece. Smaller stones located at base."
+  },
+  "R": {
+    "type": "Cairn",
+    "coords": [207,419],
+    "gps": [42.052467, -71.286083],
+    "loc": "Small bike trail just east off of Megley trail. Must go though granite ledge area. Traveling up and in back of rock ledge along trail will bring you to a large opening. Cairn in among other boulders.",
+    "desc": "Fairly modern Cairn. At least once used for a fireplace. In the middle of many large boulders in a tabletop area. Interesting allignments of rocks."
+  },
+  "S": {
+    "type": "Perched Rock",
+    "coords": [200,529],
+    "gps": [42.049283, -71.287783],
+    "loc": "Coming up from the Thurston Street Entrance of the forest, travel 1/4 mi., pass by the first perched rock (button J), this structure is about 50 yards later on the right side. Only 20' off trail.",
+    "desc": "Very large boulder perched on single small stone. Boulder about 10 feet wide, 6 feet tall, and about 25' in circumference."
+  },
+  "T": {
+    "type": "Prayer Seat",
+    "coords": [255,426],
+    "gps": [42.052250, -71.283050],
+    "loc": "At the intersection of High Rock Road and Megley, head west on Megley, first major trail on left after dolmen (Map Button D). Go 100 yards down trail, 80 yards into woods on right side of trail.",
+    "desc": "Partially buried prayer seat. Opening to the North and into a hillside. Second prayer seat 40' to the east. Azimuth = +10 MN"
+  },
+  "U": {
+    "type": "Prayer Seat",
+    "coords": [269,425],
+    "gps": [42.052300, -71.283000],
+    "loc": "At the intersection of High Rock Road and Megley, head west on Megley, first major trail on left after dolmen (Map Button D). Go 100 yards down trail, 80 yards into woods on right side of trail.",
+    "desc": "Partially buried prayer seat. Opening to the North and into a hillside. Second prayer seat 40' to the west. Azimuth = +15 MN"
+  },
+  "V": {
+    "type": "Standing Stone",
+    "coords": [285,425],
+    "gps": [42.052467, -71.282283],
+    "loc": "At the intersection of High Rock Road and Megley, head west on Megley, first major trail on left after dolmen (Map Button D). Go 100 yards down trail, 80 yards into woods on right side of trail.",
+    "desc": "Triangular pyramid shaped stone. Resting between large rock and smaller stones placed on opposite side. "
+  },
+  "W": {
+    "type": "Stone Pile",
+    "coords": [300,245],
+    "gps": [42.060750, -71.280533],
+    "loc": "Traveling south on High Rock Road from the tower, take a left onto Messenger Road. Walk about 1/2 mile to old stone wall on right. Follow stone wall to end. Look to left about 50'.",
+    "desc": "Good sized stone pile. Approximately 3 feet tall, on top of large mound of earth. Possible marker, possible burial site."
+  },
+  "X": {
+    "type": "Prayer Seat",
+    "coords": [296,310],
+    "gps": [42.058117, -71.280817],
+    "loc": "Travel south on High Rock Road, pass by Messenger Rd on left, then by Megley on right. Just before waterhole on right, take left on trail. Approx. 200 yards down trail on left, 10 yards in.",
+    "desc": "Definite prayer seat, either built on mound of earth, or a good part of the structure is buried underground. Opening north. Approx. 8 feet wide."
+  },
+  "Y": {
+    "type": "Prayer Seat",
+    "coords": [261,519],
+    "gps": [42.049100, -71.284083],
+    "loc": "South of the Megley Trail, left on trail passing giant prayer seat, top of next hill, behind perched rock area, bush whack approximately 200 yards farther south. Half way down hill area.",
+    "desc": "Horseshoe shaped formation of rocks having one large rock in the center. Shape opening to the north (Azimuth = 355 MN) and into a hill. Structure approx. 8 feet wide. Large trees growing within the formation."
+  },
+  "Z": {
+    "type": "Prayer Seat",
+    "coords": [262,255],
+    "gps": [42.060150, -71.279283],
+    "loc": "South on High Rock Road, left on Messenger Road, about 1/4 mile down on the left. Structure very close to road, and is visible as you walk by. Right next to tree with large protruding knot on it. ",
+    "desc": "Horseshoe shaped formation of rocks opening into a small hill/incline. Shape opening exacly to the north (Azimuth = 0 MN). Structure approx. 7 feet wide. Had large tree fallen recently fallen on it, recently removed."
+  },
+  // "a": {
+  //   "type": "",
+  //   "coords": [332,302],
+  //   "gps": [],
+  //   "loc": "",
+  //   "desc": ""
+  // },
+  // "b": {
+  //   "type": "",
+  //   "coords": [319,263],
+  //   "gps": [],
+  //   "loc": "",
+  //   "desc": ""
+  // }
+};
+
+function clicked(e) {
+  const img = e.target;
+  const sx = img.offsetWidth / img.naturalWidth;
+  const sy = img.offsetHeight / img.naturalHeight;
+  const x = e.offsetX / sx;
+  const y = e.offsetY / sy;
+  for (const prop in data) {
+    const d = data[prop];
+    const coords = d.coords;
+    if (!Array.isArray(coords)) continue;
+    const cx = coords[0];
+    const cy = coords[1];
+    if (cx - 5 < x && x < cx + 5 && cy - 5 < y && y < cy + 5) {
+      show(prop);
+      return;
+    }
+  }
+  show(null);
+}
+
+function show(site) {
+  const info = data[site];
+  if (info) {
+    document.getElementById("myImage").style.display = "inline";
+    document.getElementById("myInfo").style.display = "inline";
+    document.getElementById("myImage").src = site + ".jpg";
+    document.getElementById("myType").textContent = info.type;
+    document.getElementById("myLocation").textContent = info.loc;
+    document.getElementById("myDescription").textContent = info.desc;
+    document.getElementById("myInfo").scrollIntoView();
+  } else {
+    document.getElementById("myImage").style.display = "none";
+    document.getElementById("myInfo").style.display = "none";
+  }
+}
+  </script>
+</head>
+
+<body>
+  <div class="topnav">
+    <a href="/">Home</a>
+    <a href="/topics.html">Topics</a>
+    <a href="/chapters.html" title="Chapters">Contacts</a>
+    <a href="/membership.html">Membership</a>
+    <a href="/conferences.html">Conferences</a>
+    <a href="/library.html">Library</a>
+    <a href="/research.html">Research</a>
+    <a href="/publications.html">Publications</a>
+    <a href="/gallery.html">Gallery</a>
+    <a href="/calendar.html">Calendar</a>
+    <!-- <a href="/forum.html">Forum</a> -->
+    <!-- <a href="/donate.html">Donate</a> -->
+    <div>
+      <a href="/chapters/Massachusetts/Foxboro/index.html">Foxboro</a>
+      <a href="/chapters/Massachusetts/Foxboro/map.html" class="active">Map</a>
+    </div>
+  </div>
+
+  <h2>Stone Sites map of Foxboro State Forest, by Chuck Drayton</h2>
+  <p>
+    The map below is a scanned copy of the trail map distributed at the Foxboro State Forest Headquarters,
+    Foxborough Massachusetts.
+    Click on the yellow buttons on the map locations indicated, and see photographs and descriptions
+    of the stone structures found there.
+  </p>
+
+  <img src="map.jpg" onclick="clicked(event)"> 
+  <img id="myImage" style="display:none"><br>
+  <span id="myInfo" style="display:none">
+    <b>Structure:</b> <span id="myType"></span><br>
+    <b>Location:</b> <span id="myLocation"></span><br>
+    <b>Description:</b> <span id="myDescription"></span>
+  </span>
+
+  <p class="copyright">Copyright &copy; 2003-2004 by Chuck Drayton</span>
+
+  <p class="copyright">
+    Copyright &copy; 2024 New England Antiquities Research Association.  All rights reserved.
+    Some materials are copyright their respective authors.
+    Note that the views expressed here are the opinions of the respective authors
+    and are not the official opinion of NEARA.
+  </p>
+</body>
+</html>
