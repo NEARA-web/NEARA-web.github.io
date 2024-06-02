@@ -291,7 +291,7 @@ function show(site) {
     of the stone structures found there.
   </p>
 
-  <img src="map.jpg" onclick="clicked(event)"> 
+  <img src="map.jpg" id="myMap"> 
   <img id="myImage" style="display:none"><br>
   <span id="myInfo" style="display:none">
     <b>Structure:</b> <span id="myType"></span><br>
@@ -307,5 +307,8 @@ function show(site) {
     Note that the views expressed here are the opinions of the respective authors
     and are not the official opinion of NEARA.
   </p>
+  <script>
+    document.getElementById("myMap").addEventListener("click", clicked);
+  </script>
 </body>
 </html>
