@@ -18,6 +18,8 @@ https://neara.org/chapters/Maine.html
 https://neara.org/chapters/Maine/RockArt.html
 https://neara.org/chapters/Massachusetts.html
 https://neara.org/chapters/Massachusetts/DightonRock.html
+https://neara.org/chapters/Massachusetts/Foxboro/index.html
+https://neara.org/chapters/Massachusetts/Foxboro/map.html
 https://neara.org/chapters/Massachusetts/MiddleboroughHands.html
 https://neara.org/chapters/Massachusetts/OldPlymouth.html
 https://neara.org/chapters/NewHampshire.html
