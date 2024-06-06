@@ -18,6 +18,53 @@
       }
     }
   </style>
+</head>
+
+<body>
+  <div class="topnav">
+    <a href="/">Home</a>
+    <a href="/topics.html">Topics</a>
+    <a href="/chapters.html" title="Chapters">Contacts</a>
+    <a href="/membership.html">Membership</a>
+    <a href="/conferences.html">Conferences</a>
+    <a href="/library.html">Library</a>
+    <a href="/research.html">Research</a>
+    <a href="/publications.html">Publications</a>
+    <a href="/gallery.html">Gallery</a>
+    <a href="/calendar.html">Calendar</a>
+    <a href="/forum.html">Forum</a>
+    <!-- <a href="/donate.html">Donate</a> -->
+    <div>
+      <a href="/chapters/Massachusetts/Foxboro/index.html">Foxboro</a>
+      <a href="/chapters/Massachusetts/Foxboro/map.html" class="active">Map</a>
+    </div>
+  </div>
+
+  <h2>Stone Sites map of Foxboro State Forest, by Chuck Drayton</h2>
+  <p>
+    The map below is a scanned copy of the trail map distributed at the Foxboro State Forest Headquarters,
+    Foxborough Massachusetts.
+    Click on the yellow buttons on the map locations indicated, and see photographs and descriptions
+    of the stone structures found there.
+  </p>
+
+  <img src="map.jpg" id="myMap"> 
+  <img id="myImage" style="display:none"><br>
+  <span id="myInfo" style="display:none">
+    <b>Structure:</b> <span id="myType"></span><br>
+    <b>Location:</b> <span id="myLocation"></span><br>
+    <b>Description:</b> <span id="myDescription"></span>
+  </span>
+
+  <p class="copyright">Copyright &copy; 2003-2004 by Chuck Drayton</span>
+
+  <p class="copyright">
+    Copyright &copy; 2024 New England Antiquities Research Association.  All rights reserved.
+    Some materials are copyright their respective authors.
+    Note that the views expressed here are the opinions of the respective authors
+    and are not the official opinion of NEARA.
+  </p>
+
   <script>
 const data = {
   "A": {
@@ -260,55 +307,8 @@ function show(site) {
     document.getElementById("myInfo").style.display = "none";
   }
 }
-  </script>
-</head>
 
-<body>
-  <div class="topnav">
-    <a href="/">Home</a>
-    <a href="/topics.html">Topics</a>
-    <a href="/chapters.html" title="Chapters">Contacts</a>
-    <a href="/membership.html">Membership</a>
-    <a href="/conferences.html">Conferences</a>
-    <a href="/library.html">Library</a>
-    <a href="/research.html">Research</a>
-    <a href="/publications.html">Publications</a>
-    <a href="/gallery.html">Gallery</a>
-    <a href="/calendar.html">Calendar</a>
-    <!-- <a href="/forum.html">Forum</a> -->
-    <!-- <a href="/donate.html">Donate</a> -->
-    <div>
-      <a href="/chapters/Massachusetts/Foxboro/index.html">Foxboro</a>
-      <a href="/chapters/Massachusetts/Foxboro/map.html" class="active">Map</a>
-    </div>
-  </div>
-
-  <h2>Stone Sites map of Foxboro State Forest, by Chuck Drayton</h2>
-  <p>
-    The map below is a scanned copy of the trail map distributed at the Foxboro State Forest Headquarters,
-    Foxborough Massachusetts.
-    Click on the yellow buttons on the map locations indicated, and see photographs and descriptions
-    of the stone structures found there.
-  </p>
-
-  <img src="map.jpg" id="myMap"> 
-  <img id="myImage" style="display:none"><br>
-  <span id="myInfo" style="display:none">
-    <b>Structure:</b> <span id="myType"></span><br>
-    <b>Location:</b> <span id="myLocation"></span><br>
-    <b>Description:</b> <span id="myDescription"></span>
-  </span>
-
-  <p class="copyright">Copyright &copy; 2003-2004 by Chuck Drayton</span>
-
-  <p class="copyright">
-    Copyright &copy; 2024 New England Antiquities Research Association.  All rights reserved.
-    Some materials are copyright their respective authors.
-    Note that the views expressed here are the opinions of the respective authors
-    and are not the official opinion of NEARA.
-  </p>
-  <script>
-    document.getElementById("myMap").addEventListener("click", clicked);
+document.getElementById("myMap").addEventListener("click", clicked);
   </script>
 </body>
 </html>
