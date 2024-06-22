@@ -61,21 +61,25 @@
     More on these roles is provided below.
   </p>
 
-  <h3>Program Committee</h3>
+  <h3>Permanent and Conference Program Committees</h3>
   <p>
-    There is a new <b>Program Committee</b> (<a href="mailto:program@neara.org">program@neara.org</a>)
+    There is a new <b>Permanent Program Committee</b> (<a href="mailto:program@neara.org">program@neara.org</a>)
     which is meant to help multiple jobs in NEARA -- not only for conferences but for publications as well.
-    The purpose of the <b>Program Committee</b> is to help find good presenters or good authors about topics of interest to members.
+    The purpose of the <b>Permanent Program Committee</b> is to help find good presenters or good authors about topics of interest to members.
     It must operate year-around in order to provide recommendations for the different publishers of content.
     It should also provide some institutional memory, which will help smooth relationships in the future.
-    The <b>Conference Program Committee</b> is presumably a superset of this <b>Program Committee</b>,
-    because it would include people interested in local features and/or the conference theme.
   </p>
   <p>
-    It would be good practice for publication editors and conference programmers to consult with the <b>Program Committee</b>
+    The <b>Conference Program Committee</b> is effectively a superset of this <b>Permanent Program Committee</b>,
+    because it would include people interested in local features and/or the conference theme.
+    However its purpose is limited to a particular conference.
+    There might be multiple Conference Program Committees operating at the same time for different conferences.
+  </p>
+  <p>
+    It would be good practice for publication editors and conference programmers to consult with the <b>Permanent Program Committee</b>
     and the <b>Board of Directors</b> before inviting someone not already known to everyone to write in a publication or speak at a conference.
     Similarly, it would be good practice for publication editors and conference programmers to run their near-final drafts
-    by the <b>Program Committee</b> and the <b>Board of Directors</b> (with a short response time limit) to increase chances of catching errors.
+    by the <b>Permanent Program Committee</b> and the <b>Board of Directors</b> (with a short response time limit) to increase chances of catching errors.
   </p>
 
   <h3>Member Communications Committee</h3>
@@ -83,16 +87,16 @@
     It would also be desirable for NEARA members to have more frequent and different kinds of interactions with the organization.
     There is more to NEARA than just the Journal, the Transit, and the conferences.
     We need to move NEARA into the 21st century by fully embracing the use of the internet.
-    That applies to all roles, but many of the new possibilities are grouped under the new <b>Member Communications Committee</b>.
+    That applies to all roles, but many of the new possibilities are grouped under the new <b>Member Communications Committee</b>,
+    sometimes abbreviated as "MemComm".
     Some of the media that the <b>Member Communications Committee</b> could oversee are:
   </p>
   <ul>
-    <li>The <b>Membership Committee</b> will continue operating mostly via email.</li>
     <li>
-      NEARA used to have an online forum (Yahoo Group) for discussion by NEARA members.
-      We could resuscitate it as a Google Group (i.e. mailing list).
-      Even though the group would only be open to NEARA members,
-      it will need to have a moderator to ensure quality and to manage the membership.
+      The <a href="/membership.html">Membership Committee</a> will continue operating mostly via email.
+    </li>
+    <li>
+      The <a href="/forum.html">NEARA Forum</a> is a private moderated mailing list for discussions amongst NEARA members.
     </li>
     <li>
       The <a href="/calendar.html">NEARA Calendar</a> notifies people about potential events of interest.
@@ -127,10 +131,11 @@
     But having a lot of field trips on the same day helps alleviate that need -- people can travel to
     whichever field trip they prefer.
     And virtual conferences save everyone a lot of money -- they have no hotel or meeting costs.
+    Still, it seems most people would prefer in-person conferences.
   </p>
   <p>
     Individual Zoom presentations could happen at any time of the year.
-    Whenever the <b>Webinar Manager</b>, in cooperation with the <b>Program Committee</b> and the <b>Member Communications Committee</b>,
+    Whenever the <b>Webinar Manager</b>, in cooperation with the <b>Permanent Program Committee</b> and the <b>Member Communications Committee</b>,
     decides there is a good presentation to be made, it can be done with relatively little effort.
   </p>
   <p>
@@ -148,7 +153,7 @@
 
   <div id="myDiagramDiv" style="border: solid 1px gray; width: 100%; height: 600px; background:whitesmoke"></div>
 
-  <div id="myInfo" class="tooltip" style="display:none">
+  <div id="myInfo" class="list" style="display:none" onclick="highlight(null, false)">
     <h2>NEARA Roles</h2>
 
     <h3 id="1">NEARA Member</h3>
@@ -179,7 +184,7 @@
       <li>Signs contracts, policies, actions, engagements, obligations</li>
     </ul>
 
-    <h3 id="5">Program Committee</h3>
+    <h3 id="5">Permanent Program Committee</h3>
     <ul>
       <li>Throughout the year stays on the lookout for good presenters and interesting topics</li>
       <li>Recommends presenters/topics to Conference Program Subcommittee, Webinar Manager, Journal, Transit, and Member Communications</li>
@@ -194,7 +199,7 @@
 
     <h3 id="7">Conference Program Subcommittee</h3>
     <ul>
-      <li>Augments the regular Program Committee with people with local interests or conference theme interests</li>
+      <li>Augments the regular Permanent Program Committee with people with local interests or conference theme interests</li>
       <li>Determines theme (if any) along with the First Vice President</li>
       <li>Chooses presentations and sends invitations</li>
     </ul>
@@ -419,13 +424,14 @@
 
   <textarea id="mySavedModel" style="width: 100%; height: 15px; display: none"></textarea>
 
-  <script src="https://unpkg.com/gojs"></script>
+  <script src="https://unpkg.com/gojs@3.0"></script>
   <script>
 go.Diagram.licenseKey = "6de51fbdf733098a42871c32463038ec0ca46f23c8814ea50d5645f4b90b6e1d229ce07f54d699d0d5ad1ef41a2d90df89c26a2c951f0c6be334dad947e380ffb33170b4165c148aa00734d39faf7aa7fc2a21f3d0a574a3d97d93f1f4a9";
 const myInfo = document.getElementById("myInfo");
 
 const C = ["lightgray", "lightgreen", "lightblue"];
 const myDiagram = new go.Diagram("myDiagramDiv", {
+  "animationManager.isEnabled": false,
   initialAutoScale: go.Diagram.Uniform,
   isReadOnly: true,
   "ModelChanged": e => {     // just for demonstration purposes,
@@ -438,6 +444,8 @@ const myDiagram = new go.Diagram("myDiagramDiv", {
     if (e.key === "W") {
       myDiagram.isReadOnly = !myDiagram.isReadOnly;
       document.getElementById("mySavedModel").style.display = myDiagram.isReadOnly ? "none" : "block";
+    } else if (e.key === "Escape") {
+      highlight(null, false);
     }
   },
   click: e => highlight(null, false),
@@ -652,6 +660,15 @@ myDiagram.model = go.Model.fromJson(`
 {"from":6,"to":41}
 ]}
 `);
+if (window.location.hash) {
+  myDiagram.div.scrollIntoView();
+  const id = window.location.hash.substring(1);
+  if (id) setTimeout(() => {
+      myDiagram.focus();
+      const node = myDiagram.findNodeForKey(parseInt(id));
+      if (node) highlight(node, true);
+    }, 1000);
+}
   </script>
 </body>
 </html>
