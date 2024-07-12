@@ -11,6 +11,7 @@ https://neara.org/membership.html
 https://neara.org/organization.html
 https://neara.org/publications.html
 https://neara.org/research.html
+https://neara.org/sale.html
 https://neara.org/topics.html
 https://neara.org/chapters/AtlanticCanada.html
 https://neara.org/chapters/Connecticut.html
@@ -18,7 +19,7 @@ https://neara.org/chapters/Maine.html
 https://neara.org/chapters/Maine/RockArt.html
 https://neara.org/chapters/Massachusetts.html
 https://neara.org/chapters/Massachusetts/DightonRock.html
-https://neara.org/chapters/Massachusetts/Foxboro/index.html
+https://neara.org/chapters/Massachusetts/Foxboro/
 https://neara.org/chapters/Massachusetts/Foxboro/map.html
 https://neara.org/chapters/Massachusetts/MiddleboroughHands.html
 https://neara.org/chapters/Massachusetts/OldPlymouth.html
@@ -40,6 +41,15 @@ https://neara.org/pages/Delaware_Water_Gap.html
 https://neara.org/pages/Early%20Stone%20Cairns%20and%20Rows%20in%20Eastern%20Pennsylvania.html
 https://neara.org/pages/Fahnestock%20Memorial%20State%20Park.html
 https://neara.org/pages/Glastenbury%20Mountain%20Cairn%20Site.html
+https://neara.org/pages/IndianRockPiles/
+https://neara.org/pages/IndianRockPiles/IndianFarmer.html
+https://neara.org/pages/IndianRockPiles/ReviewAndSummary.html
+https://neara.org/pages/IndianRockPiles/RockOnRock.html
+https://neara.org/pages/IndianRockPiles/RockPileTypes.html
+https://neara.org/pages/IndianRockPiles/SiteDistribution.html
+https://neara.org/pages/IndianRockPiles/SplitWedgedRocks.html
+https://neara.org/pages/IndianRockPiles/ThreeRockPileSites.html
+https://neara.org/pages/IndianRockPiles/Twins.html
 https://neara.org/pages/Manitou%20Stones%20in%20Rochester%20Vermont.html
 https://neara.org/pages/Montville%20Souterrain%20Reconsidered.html
 https://neara.org/pages/Moore/
