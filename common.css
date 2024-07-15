@@ -70,6 +70,10 @@ h3 {
   font-weight: lighter;
 }
 
+h4 {
+  margin-bottom: 0.5em;
+}
+
 p {
   max-width: 1000px;
 }
@@ -92,9 +96,14 @@ em {
 }
 
 ttl {
-  /*font-size: 12pt;
-  font-weight: bold;*/
+  font-size: 12.5pt;
+  font-weight: bold;
   font-style: italic;
+}
+
+auth {
+  font-weight: normal;
+  font-size: 12pt;
 }
 
 cmnt {
