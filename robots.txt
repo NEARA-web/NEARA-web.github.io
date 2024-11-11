@@ -1,3 +1,8 @@
 User-agent: *
+User-agent: Adsbot-Google
+Disallow: https://neara.org/lib/NEARA.Library/
+
+User-agent: *
 Allow: /
+
 Sitemap: https://neara.org/sitemap.txt
