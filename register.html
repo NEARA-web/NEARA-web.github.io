@@ -3,17 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Missing page" />
-  <title>Wrong page?</title>
+  <meta name="description" content="Registration for a NEARA Conference" />
+  <title>NEARA Conference Registration</title>
   <link href="/common.css" rel="stylesheet">
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-0QW45RRVV9"></script>
   <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-0QW45RRVV9');</script>
+  <script async src="https://js.stripe.com/v3/buy-button.js"></script>
 </head>
 <body>
   <div class="topnav">
     <a href="/">Home</a>
     <a href="/topics.html">Topics</a>
-    <a href="/chapters.html">Contacts</a>
+    <a href="/chapters.html" title="Chapters">Contacts</a>
     <a href="/membership.html">Membership</a>
     <a href="/conferences.html">Conferences</a>
     <a href="/library.html">Library</a>
@@ -23,15 +24,18 @@
     <a href="/calendar.html">Calendar</a>
     <a href="/forum.html">Forum</a>
     <a href="/sale.html" title="Sale">Books</a>
+    <a href="/register.html" class="active">Registration</a>
     <!-- <a href="/donate.html">Donate</a> -->
   </div>
 
-  <p>
-    We're sorry, but that page does not exist.
-  </p>
-  <p>
-    Please try one of the links shown above in the navigation bar.
-  </p>
+  <img src="/images/logo.webp" class="logotitle" alt="New England Antiquities Research Association logo">
+
+  <h2>Register for the next NEARA Conference</h2>
+
+  <stripe-buy-button
+    buy-button-id="buy_btn_1QTbq4IHW1njzPyCwjo2skzg"
+    publishable-key="pk_live_51QTCr0IHW1njzPyCTxWZTHBpKZKmgUxq5Fky1uCvJjy3zb2HNSGH2G8crN2NvFVG8UZYGyhWXAqQj12nWBVPAkxE00OBP2gm7z"
+  ></stripe-buy-button>
 
   <p class="copyright">
     Copyright &copy; 2024 New England Antiquities Research Association.  All rights reserved.
