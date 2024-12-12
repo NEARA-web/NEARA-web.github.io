@@ -468,6 +468,7 @@ const myDiagram = new go.Diagram("myDiagramDiv", {
       new go.Shape("Ellipse", { fill: C[0], stroke: "gray", strokeWidth: 1.5, portId: "", fromLinkable: true, toLinkable: true, cursor: "pointer" })
         .bind("fill", "comm", c => c ? C[1] : C[0])
         .bind("fill", "mult", c => c ? C[2] : C[0])
+        .bind("fill", "color")
         .bindObject("stroke", "isHighlighted", s => s ? "red" : "gray")
         .bindObject("strokeWidth", "isHighlighted", s => s ? 3 : 1)
         ,
@@ -548,8 +549,8 @@ myDiagram.add(new go.Part("Auto", {
 myDiagram.model = go.Model.fromJson(`
 { "class": "GraphLinksModel",
   "nodeDataArray": [
-{"key":1,"text":"NEARA\\nMember","loc":"37 50"},
-{"key":2,"text":"Board of\\nDirectors","loc":"580 406","comm":true},
+{"key":1,"text":"NEARA\\nMember","loc":"37 50","color":"gold"},
+{"key":2,"text":"Board of\\nDirectors","loc":"581 413","comm":true},
 {"key":3,"text":"Treasurer","loc":"500 480"},
 {"key":4,"text":"President","loc":"723 443"},
 {"key":5,"text":"Program\\nAdvisory","loc":"346 158","comm":true},
@@ -557,22 +558,22 @@ myDiagram.model = go.Model.fromJson(`
 {"key":7,"text":"Conference\\nProgram","loc":"609 216","group":-1,"comm":true},
 {"key":8,"text":"Conference\\nArrangements","loc":"641 309","group":-1},
 {"key":9,"text":"Conference\\nField Trips","loc":"611 262","group":-1},
-{"key":10,"text":"Conference\\nAudio/Visual","loc":"717 141","group":-1},
+{"key":10,"text":"Conference\\nAudio/Visual","loc":"718 138","group":-1},
 {"key":11,"text":"Webinar\\nManager","loc":"609 89"},
-{"key":12,"text":"Second Vice\\nPresident","loc":"457 382"},
+{"key":12,"text":"Second Vice\\nPresident","loc":"452 384"},
 {"key":13,"text":"Secretary","loc":"669 477"},
 {"key":14,"text":"Director-\\nat-Large","loc":"726 396","mult":true},
 {"key":15,"text":"Research and\\nSpecial Projects","loc":"129 463","comm":true},
-{"key":16,"text":"Site\\nReporting","loc":"16 425"},
+{"key":16,"text":"Site\\nReporting","loc":"5 418"},
 {"key":17,"text":"Publications","loc":"308 246","comm":true},
 {"key":18,"text":"Journal\\nEditor","loc":"349 208"},
-{"key":19,"text":"Transit\\nEditor","loc":"248 208"},
+{"key":19,"text":"Transit\\nEditor","loc":"262 202"},
 {"key":20,"text":"Reviewer","loc":"467 207","mult":true},
-{"key":21,"text":"Publication\\nDesign/Layout","loc":"459 252"},
+{"key":21,"text":"Publication\\nDesign/Layout","loc":"453 249"},
 {"key":22,"text":"Library and\\nArchives","loc":"361 417","comm":true},
 {"key":23,"text":"Librarian","loc":"255 405"},
 {"key":24,"text":"Archivist","loc":"240 431"},
-{"key":25,"text":"Book Table","loc":"314 382"},
+{"key":25,"text":"Book Table","loc":"308 377"},
 {"key":26,"text":"Member\\nCommunications","loc":"504 49","comm":true,"group":-2},
 {"key":27,"text":"Membership","loc":"426 -52","comm":true,"group":-2},
 {"key":28,"text":"Webmaster","loc":"408 113","group":-2},
@@ -580,15 +581,15 @@ myDiagram.model = go.Model.fromJson(`
 {"key":30,"text":"Social Media","loc":"349 85","group":-2},
 {"key":31,"text":"Calendar","loc":"364 2","group":-2},
 {"key":32,"text":"Finance","loc":"586 494","comm":true},
-{"key":33,"text":"Resource\\nDevelopment","loc":"60 505","comm":true},
-{"key":34,"text":"Preservation","loc":"229 496","comm":true},
+{"key":33,"text":"Resource\\nDevelopment","loc":"56 505","comm":true},
+{"key":34,"text":"Preservation","loc":"221 495","comm":true},
 {"key":35,"text":"Chapter\\nCoordinator","loc":"320 316","mult":true},
 {"key":36,"text":"Nominating","loc":"783 498","comm":true},
 {"key":37,"text":"Video\\nEditor","loc":"628 10"},
 {"key":38,"text":"Video\\nPublisher","loc":"316 38","group":-2},
-{"key":39,"text":"Conference\\nPublicity","loc":"790 183","group":-1},
+{"key":39,"text":"Conference\\nPublicity","loc":"790 179","group":-1},
 {"key":40,"text":"Field Trip\\nLeader","mult":true,"loc":"494 313"},
-{"key":41,"text":"Registrar","loc":"620 180"},
+{"key":41,"text":"Registrar","loc":"620 180","group":-1},
 {"key":-1,"isGroup":true,"loc":"550 114","size":"306 250"},
 {"key":-2,"isGroup":true,"loc":"250 -68","size":"336 200"}
 ],
