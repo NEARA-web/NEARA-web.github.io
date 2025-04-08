@@ -75,11 +75,23 @@ p {
   max-width: 1000px;
 }
 
-p a:link, ul a:link {
+p a:link {
+  color: #3030C0;
+}
+ul a:link {
+  color: #3030C0;
+}
+ol a:link {
   color: #3030C0;
 }
 
-p a:visited, ul a:visited {
+p a:visited {
+  color: #206020;
+}
+ul a:visited {
+  color: #206020;
+}
+ol a:visited {
   color: #206020;
 }
 
@@ -128,10 +140,22 @@ dd {
   .logotitle {
     filter: invert(1) hue-rotate(180deg);
   }
-  p a:link, ul a:link {
+  p a:link {
     color: #90B0F0;
   }
-  p a:visited, ul a:visited {
+  ul a:link {
+    color: #90B0F0;
+  }
+  ol a:link {
+    color: #90B0F0;
+  }
+  p a:visited {
+    color: #20A000;
+  }
+  ul a:visited {
+    color: #20A000;
+  }
+  ol a:visited {
     color: #20A000;
   }
 }
