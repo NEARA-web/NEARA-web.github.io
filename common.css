@@ -59,6 +59,11 @@ figcaption {
   font: italic 11pt sans-serif;
 }
 
+h1 {
+  font-size: 20pt;
+  font-weight: 600;
+}
+
 h2 {
   font-weight: 600;
 }
