@@ -1,6 +1,6 @@
 User-agent: *
 User-agent: Adsbot-Google
-Disallow: https://neara.org/lib/NEARA.Library/
+Disallow: /lib/NEARA.Library/
 
 User-agent: *
 Allow: /
