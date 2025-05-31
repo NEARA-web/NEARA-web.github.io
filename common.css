@@ -103,7 +103,7 @@ ol a:visited {
 
 li {
   max-width: 900px;
-  margin-bottom: 1px;
+  padding-bottom: 1px;
 }
 
 em {
