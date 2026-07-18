@@ -37,6 +37,18 @@ body {
   float: left;
 }
 
+.youtube {
+  position: absolute;
+  right: 4px;
+  top: 38px;
+  z-index: 3;
+}
+.youtubeimg {
+  margin: 0px;
+  width: 48px;
+  height: 36px;
+}
+
 img {
   margin: 10px 2px;
   max-width: 100%;
